@@ -37,3 +37,13 @@ Git is the system developers use to track every change made to a codebase. Here'
 Markdown is a simple way of writing that tells any program how to format your text — headings, bold, lists — using plain characters you can type anywhere. It's readable as-is, renders beautifully in almost every tool, and doesn't lock you into any single application. Your documents aren't trapped in a proprietary format that only one company's software can open. They're just text files — permanent, portable, and understood by both humans and AI equally well.
 
 ---
+
+## 4. Claude Code vs. Claude Desktop: A Different Category Entirely
+
+Claude Desktop is a chatbot you visit. You open a tab, you bring your question, you paste in whatever context you think it needs, and it responds. Claude Code is different in kind, not just degree — it's an agent that lives inside your workspace. It's already sitting in your project folder when you open it. It already has access to your files, your history, your structure. You don't go to it. It's there.
+
+Both run on the same underlying model — same reasoning, same capabilities, same Claude. The difference is the relationship to your work. With Claude Desktop, you are the bridge between your work and the AI. You decide what to show it, what to summarize, what to leave out. With Claude Code, that bridgework disappears. The AI has the context because the context is right there, in the folder, already visible.
+
+This is not a better chatbot. A better chatbot gives you faster, smarter answers to the questions you bring it. Claude Code changes what you have to bring in the first place — which is almost nothing. The question shifts from "how do I explain my project to the AI?" to "what do I want the AI to do with my project?" That's not an upgrade. It's a different way of working.
+
+---
