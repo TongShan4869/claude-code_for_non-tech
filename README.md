@@ -203,7 +203,7 @@ I want to be honest about something: I'm a researcher. I both write code and man
 This entire guide was built using Claude Code. The thing you're reading right now is the proof of concept. Here's what the process looked like:
 
 ```mermaid
-flowchart LR
+flowchart TD
     A["📁 Create folder\n+ GitHub repo"] --> B["💬 Talk to Claude\nabout the idea"]
     B --> C["🔧 /init\nCLAUDE.md created"]
     C --> D["🧠 Brainstorm\nwith skill"]
