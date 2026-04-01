@@ -176,3 +176,51 @@ Claude reads this file at the start of every session. From that point on, your p
 This is where Claude Code stops being a generic tool and becomes yours. Every project can have its own `CLAUDE.md`. A client folder, a research project, a personal journal — each one can have different instructions, different tone, different rules. The setup is a one-time investment that pays off every session after.
 
 ---
+
+## 7. How I Built This Guide
+
+I want to be honest about something: I am not a developer. I don't write code, I don't know git commands from memory, and before this project I had never used a terminal for anything other than following instructions I didn't fully understand. I'm a knowledge worker. I manage documents, run projects, synthesize information, and communicate — that's my job.
+
+This entire guide was built using Claude Code. The thing you're reading right now is the proof of concept.
+
+Here's what the process actually looked like.
+
+I started by creating a folder on my computer called `ClaudeCode_for_non-tech`. Inside it, I wrote a `CLAUDE.md` file in plain language — who this guide is for, what tone it should have, what I wanted to avoid. Something like: "Audience is non-technical knowledge workers. Plain language. No jargon. Conversational but not casual. Don't be preachy." That file became the standing instructions Claude would read every session.
+
+Then I opened Claude Code inside that folder and started talking. I didn't have an outline. I had a loose idea of what I wanted to explain. So I asked Claude to brainstorm with me — using a structured brainstorming skill — and we worked through the shape of the guide together. What's the core argument? What does the audience already know? What do they need to understand before they can use any of this? That conversation produced a design document: a clear articulation of what this guide is trying to do and why.
+
+From the design document, Claude created an implementation plan — a section-by-section breakdown of what needed to be written, in what order, with notes on tone and emphasis for each. I reviewed it, made a couple of adjustments, and said go.
+
+Then Claude wrote it. One section at a time, reading the design spec and the plan as it went, committing each completed section to git as it finished. I read each draft, gave feedback, watched it revise. Sometimes I redirected. Sometimes I let it run.
+
+The thing I kept noticing: I didn't have to repeat myself. Claude knew the audience from the `CLAUDE.md`. It knew the structure from the plan. It knew the argument from the design spec. Between those three documents and the git history of everything we'd already written, it always had the context it needed. I wasn't bridging anything. I was just directing.
+
+Every decision is preserved in the git history. Every draft, every revision, every moment I changed course — all of it is recorded. I can see exactly when I decided to restructure Section 3 and what it looked like before. That would have been impossible to track in a chatbot.
+
+So when I describe the pattern — folder, markdown, git, agent — I'm not describing something I read about. I'm describing what I did to build what you're reading right now. The pattern works. I can confirm it from the inside.
+
+---
+
+## 8. Recommended Tools
+
+These are the additions that made the most difference. You don't need all of them on day one, but each one extends Claude Code in a direction that's genuinely useful for knowledge workers.
+
+**Superpowers plugin** — A collection of skills for structured brainstorming, planning, and execution. This is how this guide was built: Claude brainstormed the design, wrote a spec, created a section-by-section plan, then executed it — committing as it went. Without this, the process would have been much more improvisational and harder to track. With it, Claude has a reliable workflow for any project that starts as an idea and needs to become a document.
+
+**Context7** — Fetches up-to-date documentation for libraries, tools, and services. Useful because AI training data has a cutoff date — by the time you're reading this, Claude's built-in knowledge about specific tools may already be out of date. Context7 gives Claude a way to look things up rather than guess from memory.
+
+**Playwright plugin** — Lets Claude browse the web and interact with websites directly. Useful for research, pulling information from pages, checking references, or gathering source material without you doing it by hand first.
+
+For a deeper guide on what Skills are and how to find more, see [Understanding Skills](skills-guide.md).
+
+---
+
+## 9. Go Explore
+
+The pattern is simple: folder, markdown, git, agent. That's all four ingredients. You don't need to master them before you start — you learn them by using them.
+
+What makes it yours is the content. Your projects, your files, your preferences, your `CLAUDE.md`. The same setup that built this guide works equally well for a client folder, a research project, a set of meeting notes, a running archive of decisions and drafts. Apply it to whatever you're actually managing.
+
+The goal isn't to use Claude Code. The goal is to work with less friction — to stop re-explaining context, stop losing document history, stop being the bridge between your work and your tools. Once you internalize the pattern, you'll start seeing where it fits.
+
+Start with one folder. Write one `CLAUDE.md`. See what happens.
