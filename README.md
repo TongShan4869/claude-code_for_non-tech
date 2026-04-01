@@ -4,17 +4,25 @@
 
 ## 1. You're Already Halfway There
 
-You already use AI. Maybe it's Claude, maybe ChatGPT, maybe something else — you've gotten comfortable asking it questions, drafting emails, summarizing documents. If you use Claude, you might even have Projects set up: a space where Claude remembers some context, holds onto files you've uploaded, and carries a thread between sessions. That's genuinely useful. It's also a simplified version of something much more powerful — and most people don't know the full version exists.
+You already use AI. Maybe it's Claude, maybe ChatGPT, maybe something else — you've gotten comfortable asking it questions, drafting emails, summarizing documents. If you use Claude, you might even have Projects set up: a space where Claude remembers some context, holds onto files you've uploaded, and carries a thread between sessions. Maybe you've tried Cowork, which goes further — it can access your local files, work autonomously on tasks, even spin up sub-agents to tackle different parts of a job in parallel. That's genuinely capable.
+
+So why would you want something else? Because there's a difference between a tool that completes tasks for you and a system that manages your work over time. Claude Code is the latter — and most people don't know it exists, let alone that it's available to non-developers.
 
 ---
 
-## 2. Why Local Beats Cloud
+## 2. The Full Version
 
-Claude Desktop's Projects feature gives you memory and context on Anthropic's servers. That's a good start. But it's a walled garden with limits: how many files you can upload, what formats are supported, how much structure you can give it. You're working within someone else's interface, on someone else's storage, with someone else's constraints.
+Claude Desktop's Projects gives you memory and context on Anthropic's servers. Cowork adds local file access and autonomous task execution through a friendly interface. Both are good tools. But both are doing specific jobs within constraints you don't control — the interface, the storage, the workflow, the level of customization.
 
-Your local machine has none of those limits. A folder on your computer can hold anything — documents, spreadsheets, PDFs, images, entire archives of project history. You organize it however makes sense to you. You control the structure, the naming, the hierarchy. Nothing is uploaded or filtered through a chat window.
+Claude Code gives you the full system. Your local machine has no upload limits, no format restrictions, no imposed structure. A folder on your computer can hold anything — documents, spreadsheets, PDFs, images, entire archives of project history. You organize it however makes sense to you. You control the naming, the hierarchy, the rules.
 
-And here's the part that matters most: on your local machine, you get version control. Every change tracked. Every draft preserved. The ability to undo anything, compare any two points in time, see exactly when a decision was made and what the document looked like before it. Claude Desktop's Projects can't do that. It doesn't know your project structure, your past decisions, your evolving drafts — it knows what you've uploaded to its window. The rest of your work stays invisible to it.
+But the real gap isn't storage or formats. It's three things that neither Projects nor Cowork can give you:
+
+**Version control.** Every change tracked. Every draft preserved. The ability to undo anything, compare any two points in time, see exactly when a decision was made and what the document looked like before. This isn't a feature — it's a fundamental shift in how you relate to your own work. Nothing is ever lost.
+
+**Deep customization.** Claude Code has an entire ecosystem — Skills that teach Claude specialized workflows, plugins that add bundles of new capabilities, hooks that automate triggers, MCP servers that connect Claude to your email, calendar, Slack, and more. You shape how the agent works, not just what you ask it to do.
+
+**Transparency.** You see every action Claude takes — every file it reads, every edit it makes, every step in its reasoning. Cowork hands you a finished deliverable. Claude Code lets you watch the process, redirect it, and learn from it. The difference matters when the work is yours and the decisions need to be yours too.
 
 ---
 
@@ -40,13 +48,13 @@ Markdown is a simple way of writing that tells any program how to format your te
 
 ---
 
-## 4. Claude Code vs. Claude Desktop: A Different Category Entirely
+## 4. Same Brain, Different Relationship
 
-Both run on the same underlying model — same reasoning, same capabilities, same Claude. The difference is what Claude can do with your work. Claude Desktop is a chatbot: you ask a question, it answers. Claude Code is an agent: you describe what you want done, and it goes and does it. It reads your files, creates new ones, organizes your project, runs multi-step tasks from start to finish — without you directing every move.
+All of these tools — Desktop, Cowork, Claude Code — run on the same underlying model. Same reasoning, same capabilities, same Claude. The difference isn't intelligence. It's the relationship between the AI and your work.
 
-This is not a better chatbot. A better chatbot gives you smarter answers to the questions you bring it. Claude Code changes the question entirely — from "how do I explain my project to the AI?" to "what do I want the AI to do with my project?" That's not an upgrade. It's a different way of working.
+Think of it as a spectrum. Desktop is a conversation: you bring context, Claude responds. Cowork is a task runner: you describe a deliverable, Claude produces it. Claude Code is a workspace: Claude lives inside your project, sees everything, remembers across sessions, and operates within a system you've built — version control, custom instructions, specialized skills, automated triggers.
 
-And because it runs locally, inside your project folder, it inherits everything you set up in Section 2: unlimited storage, any file format, your own structure, and full version control. Claude Desktop Projects gives you a taste of this. Claude Code gives you the real thing.
+The question isn't which one is "better." It's what you need. If you want quick answers, Desktop is fine. If you want a task done, Cowork is capable. If you want a system that manages your work over time — where nothing is lost, everything is tracked, and the AI gets better at your specific workflow the longer you use it — that's what Claude Code is for.
 
 ---
 
