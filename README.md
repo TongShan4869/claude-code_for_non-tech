@@ -6,7 +6,7 @@
 
 You already use AI. Maybe it's Claude, maybe ChatGPT, maybe something else — you've gotten comfortable asking it questions, drafting emails, summarizing documents. If you use Claude, you might even have Projects set up: a space where Claude remembers some context, holds onto files you've uploaded, and carries a thread between sessions. Maybe you've tried Cowork, which goes further — it can access your local files, work autonomously on tasks, even spin up sub-agents to tackle different parts of a job in parallel. That's genuinely capable.
 
-So why would you want something else? Because there's a difference between a tool that completes tasks for you and a system that manages your work over time. Claude Code is the latter — and most people don't know it exists, let alone that it's available to non-developers.
+So why would you want something else? Because there's a difference between a tool that completes tasks for you and a system that manages your work over time. Claude Code is the latter. The name has "code" in it, which scares people off — but Claude Code can do far more than write software. It manages documents, organizes projects, tracks changes, brainstorms ideas, drafts reports, and builds workflows. It just happens to run in a terminal. Most people don't know it exists, let alone that it's available to non-developers.
 
 ---
 
