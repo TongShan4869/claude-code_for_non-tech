@@ -85,3 +85,94 @@ MCP servers are bridges that connect Claude to external services — Gmail, Goog
 Hooks are automated triggers that run whenever Claude takes a certain action. You define the rule: "When Claude does X, also do Y." Like email filters that sort your inbox without you lifting a finger, hooks run silently in the background. They're useful for enforcing consistency — automatically formatting files, logging activity, or running a check every time Claude saves something.
 
 ---
+
+## 6. Getting Started
+
+This walkthrough teaches the pattern. You bring your own content — your documents, your projects, your questions. The goal is to show you how the pieces fit together so you can apply them to whatever you're actually working on.
+
+---
+
+### 6.1 Install Claude Code
+
+The only slightly technical step. Claude Code runs in your terminal, and you'll need Node.js installed on your computer.
+
+The official setup instructions are here: https://docs.anthropic.com/en/docs/claude-code/overview
+
+That page walks you through everything — don't try to skip steps. Once installation is done, the rest of this guide is straightforward.
+
+---
+
+### 6.2 Create Your Project Folder
+
+Create a folder on your computer for the project you want to work on. This can be anything: a research project, a set of meeting notes, a collection of drafts, a client folder. The name doesn't matter. The principle does: everything related to one project lives in one folder.
+
+This is the unit Claude Code works with. When you open Claude Code pointed at this folder, it can see everything inside it. Files, subfolders, all of it — immediately available, without you pasting a single thing.
+
+Start simple. One folder. Put some files in it. You can organize further later.
+
+---
+
+### 6.3 Start Claude Code
+
+Open your terminal, navigate to your project folder, and type:
+
+```
+claude
+```
+
+That's it. Claude Code opens inside your folder. It can now see everything in it.
+
+This is the shift. You're not visiting a chatbot and pasting in context. Claude is already sitting in your project. When you ask it something, it can look at the actual files. You stop being the bridge between your work and the AI — the AI has direct access.
+
+---
+
+### 6.4 Start Working
+
+Talk to it the way you'd talk to a capable colleague who just got access to your files. Some examples of things you might actually say:
+
+- "Summarize everything in this folder"
+- "Create a meeting notes template I can reuse"
+- "What did I write last week about the Henderson proposal?"
+- "Draft a response to this email based on the project brief in the brief.md file"
+- "What are the open questions across all my notes?"
+
+You don't need special syntax. You don't need to think like a programmer. The conversation is the same as chatting with Claude Desktop — the difference is that Claude now has your actual files in front of it, not just what you chose to paste.
+
+If it gets something wrong, correct it. If you want more, ask for more. It's iterative and conversational throughout.
+
+---
+
+### 6.5 Save Your Progress with Git
+
+Git is a tool that takes snapshots of your project over time. Every time you tell it to save, it records exactly what changed, when, and why. You can go back to any earlier version, see the full history of your work, and undo anything — without losing what came after.
+
+Most people think of this as a developer tool. It isn't, really. It's a document management discipline, and it's valuable for anyone who works with files that evolve over time.
+
+You don't need to learn git commands to use it here. Just ask Claude:
+
+- "Commit my changes"
+- "What changed since yesterday?"
+- "Show me what this file looked like last week"
+
+Claude handles the mechanics. You get the benefit: a complete, searchable history of your project, the ability to undo anything, and a record that syncs across machines if you want it to.
+
+Think of it as a life skill, not a developer skill. The habit of committing your work — taking a named snapshot before you make big changes — is useful far beyond Claude Code. It means you never truly lose anything.
+
+For a deeper introduction, see [Git for Document Management](git-for-docs.md).
+
+---
+
+### 6.6 Make It Yours
+
+Create a file called `CLAUDE.md` inside your project folder. Write it in plain language. Tell Claude how you work:
+
+- What this project is about
+- How you prefer things written (plain language, no jargon, bullet points vs. prose)
+- What to avoid
+- Anything it should always keep in mind
+
+Claude reads this file at the start of every session. From that point on, your preferences are already in effect. You don't brief it every morning. You don't re-explain your context. It knows.
+
+This is where Claude Code stops being a generic tool and becomes yours. Every project can have its own `CLAUDE.md`. A client folder, a research project, a personal journal — each one can have different instructions, different tone, different rules. The setup is a one-time investment that pays off every session after.
+
+---
