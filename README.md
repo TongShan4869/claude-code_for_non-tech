@@ -2,17 +2,19 @@
 
 ---
 
-## 1. The Gap Nobody Talks About
+## 1. You're Already Halfway There
 
-You already use AI. Maybe it's Claude, maybe ChatGPT, maybe something else — you've gotten comfortable asking it questions, drafting emails, summarizing documents. But there's a version of this that goes further, and most people don't know it exists. What if your AI didn't just answer questions but actually worked inside your projects — remembering what you told it last week, reading your files, tracking every change you made? That's not a future feature. It's available now, and you don't need to be a developer to use it.
+You already use AI. Maybe it's Claude, maybe ChatGPT, maybe something else — you've gotten comfortable asking it questions, drafting emails, summarizing documents. If you use Claude, you might even have Projects set up: a space where Claude remembers some context, holds onto files you've uploaded, and carries a thread between sessions. That's genuinely useful. It's also a simplified version of something much more powerful — and most people don't know the full version exists.
 
 ---
 
-## 2. The Ceiling You've Already Hit
+## 2. Why Local Beats Cloud
 
-Here's the frustrating thing about chatbot-style AI: every conversation starts from zero. Yesterday you spent an hour giving it context about a project — the background, the goals, the constraints, what you'd already tried. Today, it's gone. You're pasting it all in again, hoping it fits within whatever invisible limit exists, knowing you'll lose it the moment you close the tab. The AI is working from a snapshot you handed it, not from any real understanding of your work.
+Claude Desktop's Projects feature gives you memory and context on Anthropic's servers. That's a good start. But it's a walled garden with limits: how many files you can upload, what formats are supported, how much structure you can give it. You're working within someone else's interface, on someone else's storage, with someone else's constraints.
 
-And it can't see your actual files. It doesn't know your project structure, your past decisions, your evolving drafts. You copy fragments in, it responds to those fragments, and the rest of your work stays invisible to it. This is genuinely powerful — but it's also fundamentally disconnected. You're the one doing all the bridgework, every single session, by hand.
+Your local machine has none of those limits. A folder on your computer can hold anything — documents, spreadsheets, PDFs, images, entire archives of project history. You organize it however makes sense to you. You control the structure, the naming, the hierarchy. Nothing is uploaded or filtered through a chat window.
+
+And here's the part that matters most: on your local machine, you get version control. Every change tracked. Every draft preserved. The ability to undo anything, compare any two points in time, see exactly when a decision was made and what the document looked like before it. Claude Desktop's Projects can't do that. It doesn't know your project structure, your past decisions, your evolving drafts — it knows what you've uploaded to its window. The rest of your work stays invisible to it.
 
 ---
 
@@ -30,7 +32,7 @@ When Claude Code runs inside your project folder, it can see everything in it. E
 
 ### Git (Version Control)
 
-Git is the system developers use to track every change made to a codebase. Here's the thing: it works just as well for documents, notes, and project files. Every change is recorded. You can undo anything. You can see exactly what changed, when, and why. Think of it less as a technical tool and more as a life skill for document management — the kind of safety net that means you can make bold edits without anxiety, because nothing is ever truly gone.
+Git is a system that tracks every change made to a set of files. Developers use it for code, but it works just as well for documents, notes, and project files. Every change is recorded. You can undo anything. You can see exactly what changed, when, and why — the kind of safety net that means you can make bold edits without anxiety, because nothing is ever truly gone.
 
 ### Markdown
 
@@ -40,11 +42,11 @@ Markdown is a simple way of writing that tells any program how to format your te
 
 ## 4. Claude Code vs. Claude Desktop: A Different Category Entirely
 
-Claude Desktop is a chatbot you visit. You open a tab, you bring your question, you paste in whatever context you think it needs, and it responds. Claude Code is different in kind, not just degree — it's an agent that lives inside your workspace. It's already sitting in your project folder when you open it. It already has access to your files, your history, your structure. You don't go to it. It's there.
+Both run on the same underlying model — same reasoning, same capabilities, same Claude. The difference is what Claude can do with your work. Claude Desktop is a chatbot: you ask a question, it answers. Claude Code is an agent: you describe what you want done, and it goes and does it. It reads your files, creates new ones, organizes your project, runs multi-step tasks from start to finish — without you directing every move.
 
-Both run on the same underlying model — same reasoning, same capabilities, same Claude. The difference is the relationship to your work. With Claude Desktop, you are the bridge between your work and the AI. You decide what to show it, what to summarize, what to leave out. With Claude Code, that bridgework disappears. The AI has the context because the context is right there, in the folder, already visible.
+This is not a better chatbot. A better chatbot gives you smarter answers to the questions you bring it. Claude Code changes the question entirely — from "how do I explain my project to the AI?" to "what do I want the AI to do with my project?" That's not an upgrade. It's a different way of working.
 
-This is not a better chatbot. A better chatbot gives you faster, smarter answers to the questions you bring it. Claude Code changes what you have to bring in the first place — which is almost nothing. The question shifts from "how do I explain my project to the AI?" to "what do I want the AI to do with my project?" That's not an upgrade. It's a different way of working.
+And because it runs locally, inside your project folder, it inherits everything you set up in Section 2: unlimited storage, any file format, your own structure, and full version control. Claude Desktop Projects gives you a taste of this. Claude Code gives you the real thing.
 
 ---
 
@@ -94,7 +96,7 @@ This walkthrough teaches the pattern. You bring your own content — your docume
 
 ### 6.1 Install Claude Code
 
-The only slightly technical step. Claude Code runs in your terminal, and you'll need Node.js installed on your computer.
+The only slightly technical step. Claude Code runs in your terminal — the text-based command window built into every Mac and Windows computer. You'll also need Node.js (a free software runtime that Claude Code depends on) installed.
 
 The official setup instructions are here: https://docs.anthropic.com/en/docs/claude-code/overview
 
@@ -144,19 +146,9 @@ If it gets something wrong, correct it. If you want more, ask for more. It's ite
 
 ### 6.5 Save Your Progress with Git
 
-Git is a tool that takes snapshots of your project over time. Every time you tell it to save, it records exactly what changed, when, and why. You can go back to any earlier version, see the full history of your work, and undo anything — without losing what came after.
+Git takes snapshots of your project over time. You don't need to learn any commands — just ask Claude: "commit my changes," "what changed since yesterday?", or "show me what this file looked like last week." Claude handles the mechanics.
 
-Most people think of this as a developer tool. It isn't, really. It's a document management discipline, and it's valuable for anyone who works with files that evolve over time.
-
-You don't need to learn git commands to use it here. Just ask Claude:
-
-- "Commit my changes"
-- "What changed since yesterday?"
-- "Show me what this file looked like last week"
-
-Claude handles the mechanics. You get the benefit: a complete, searchable history of your project, the ability to undo anything, and a record that syncs across machines if you want it to.
-
-Think of it as a life skill, not a developer skill. The habit of committing your work — taking a named snapshot before you make big changes — is useful far beyond Claude Code. It means you never truly lose anything.
+The payoff: a complete, searchable history of your project, the ability to undo anything, and a record that syncs across machines. Think of it as a life skill, not a developer skill — the habit of taking named snapshots before you make big changes is valuable far beyond Claude Code.
 
 For a deeper introduction, see [Git for Document Management](git-for-docs.md).
 
@@ -207,7 +199,7 @@ These are the additions that made the most difference. You don't need all of the
 
 **Superpowers plugin** — A collection of skills for structured brainstorming, planning, and execution. This is how this guide was built: Claude brainstormed the design, wrote a spec, created a section-by-section plan, then executed it — committing as it went. Without this, the process would have been much more improvisational and harder to track. With it, Claude has a reliable workflow for any project that starts as an idea and needs to become a document.
 
-**Context7** — Fetches up-to-date documentation for libraries, tools, and services. Useful because AI training data has a cutoff date — by the time you're reading this, Claude's built-in knowledge about specific tools may already be out of date. Context7 gives Claude a way to look things up rather than guess from memory.
+**Context7** — Fetches up-to-date documentation for libraries, tools, and services. Useful because AI training data has a cutoff date — Claude's built-in knowledge of specific software tools and their current versions may be out of date. Context7 gives Claude a way to look things up rather than guess from memory.
 
 **Playwright plugin** — Lets Claude browse the web and interact with websites directly. Useful for research, pulling information from pages, checking references, or gathering source material without you doing it by hand first.
 

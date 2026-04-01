@@ -22,7 +22,7 @@ Skills come packaged inside **plugins**. A plugin is a bundle that may contain o
 
 There are three main sources:
 
-- **The official Claude Code plugins registry** — a curated list of plugins maintained by Anthropic. These are vetted and ready to use.
+- **The official Claude Code plugins registry** — a curated list of plugins maintained by Anthropic, reviewed for quality and ready to use. You can browse it by asking Claude: "Show me the official plugins."
 - **Community-built plugins on GitHub** — the broader Claude Code community publishes plugins publicly. Quality varies, but many are excellent and cover niche use cases the official registry doesn't.
 - **Asking Claude directly** — if you're not sure what's available, just ask: "What plugins are available?" Claude can surface options relevant to what you're trying to do.
 
@@ -47,7 +47,7 @@ Once installed, skills work in two ways:
 
 **Automatic activation.** Many skills are designed to detect when they're relevant and activate on their own. If you start describing a brainstorming problem, a brainstorming skill may kick in without you doing anything. Claude recognizes the pattern of what you're doing and applies the appropriate method.
 
-**Manual invocation.** You can also call a skill directly by name using a slash command. For example:
+**Manual invocation.** You can also call a skill directly by typing a slash command in your Claude Code session — a forward slash followed by the skill name. For example:
 - `/commit` — triggers a commit skill
 - `/brainstorm` — triggers a brainstorming skill
 
