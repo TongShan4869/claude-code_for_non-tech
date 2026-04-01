@@ -41,6 +41,18 @@ That's it. No settings menus, no configuration steps.
 
 ---
 
+## Global Skills vs Project-Specific Skills
+
+Skills can live at two levels:
+
+**Global skills** are installed once and available in every project you open. These are the ones you want everywhere — brainstorming, commit workflows, code review, general-purpose tools. When you install a plugin the normal way, its skills become global by default.
+
+**Project-specific skills** are scoped to a single project folder. These are useful when a particular project has unique needs — a specific writing style, a domain-specific workflow, or a set of instructions that don't apply to your other work. You can install a plugin for just one project, or create custom skills inside your project's `.claude/` folder.
+
+The distinction matters because not every skill belongs everywhere. A skill tuned for academic writing doesn't need to activate when you're managing a client folder. Keeping the right skills in the right scope means Claude stays focused and relevant to what you're actually working on.
+
+---
+
 ## How to Use a Skill
 
 Once installed, skills work in two ways:

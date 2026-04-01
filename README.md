@@ -4,7 +4,7 @@
 
 ## 1. You're Already Halfway There
 
-You already use AI. Maybe it's Claude, maybe ChatGPT, maybe something else — you've gotten comfortable asking it questions, drafting emails, summarizing documents. If you use Claude, you might even have Projects set up: a space where Claude remembers some context, holds onto files you've uploaded, and carries a thread between sessions. Maybe you've tried Cowork, which goes further — it can access your local files, work autonomously on tasks, even spin up sub-agents to tackle different parts of a job in parallel. That's genuinely capable.
+You already use AI — chatbots, maybe Claude's Projects or Cowork, maybe ChatGPT. You've gotten comfortable asking it questions, drafting emails, summarizing documents. These tools are genuinely capable.
 
 So why would you want something else? Because there's a difference between a tool that completes tasks for you and a system that manages your work over time. Claude Code is the latter. The name has "code" in it, which scares people off — but Claude Code can do far more than write software. It manages documents, organizes projects, tracks changes, brainstorms ideas, drafts reports, and builds workflows. It just happens to run in a terminal. Most people don't know it exists, let alone that it's available to non-developers.
 
@@ -14,15 +14,19 @@ So why would you want something else? Because there's a difference between a too
 
 Claude Desktop's Projects gives you memory and context on Anthropic's servers. Cowork adds local file access and autonomous task execution through a friendly interface. Both are good tools. But both are doing specific jobs within constraints you don't control — the interface, the storage, the workflow, the level of customization.
 
-Claude Code gives you the full system. Your local machine has no upload limits, no format restrictions, no imposed structure. A folder on your computer can hold anything — documents, spreadsheets, PDFs, images, entire archives of project history. You organize it however makes sense to you. You control the naming, the hierarchy, the rules.
+Claude Code gives you the full system. Your local machine has no upload limits, no format restrictions, no imposed structure. A folder on your computer can hold anything — documents, scripts, PDFs / images, entire archives of project history. You organize it however makes sense to you. You control the naming, the hierarchy, the rules.
 
 But the real gap isn't storage or formats. It's three things that neither Projects nor Cowork can give you:
 
-**Version control.** Every change tracked. Every draft preserved. The ability to undo anything, compare any two points in time, see exactly when a decision was made and what the document looked like before. This isn't a feature — it's a fundamental shift in how you relate to your own work. Nothing is ever lost.
+**Version control.** Every change tracked. Every draft preserved. The ability to undo anything, compare any two points in time, see exactly when a decision was made and what the document looked like before. You can do this through git (more on that later) or with built-in commands like `/rewind` that let you step back through your session history. Nothing is ever lost.
 
-**Deep customization.** Claude Code has an entire ecosystem — Skills that teach Claude specialized workflows, plugins that add bundles of new capabilities, hooks that automate triggers, MCP servers that connect Claude to your email, calendar, Slack, and more. You shape how the agent works, not just what you ask it to do.
+**Deep customization.** Claude Code has an entire ecosystem — Skills that teach Claude specialized workflows, plugins that add bundles of new capabilities, hooks that automate triggers, MCP servers that connect Claude to your email, calendar, Slack, and more. You shape how the agent works, totally customized to your work style, not just what you ask it to do.
 
-**Transparency.** You see every action Claude takes — every file it reads, every edit it makes, every step in its reasoning. Cowork hands you a finished deliverable. Claude Code lets you watch the process, redirect it, and learn from it. The difference matters when the work is yours and the decisions need to be yours too.
+**Extensibility.** Cowork can only do what Anthropic has built into it. If a feature doesn't exist yet, you wait. With Claude Code, you describe what you need and Claude builds it for you — a custom tool, a new workflow, an automation — right there in your session. You're not limited to someone else's product roadmap.
+
+**Collaboration, not delegation.** Claude Code is a live working session — you redirect mid-task, build on what Claude just did, learn from the process. It's closer to working with a colleague than assigning work to an assistant.
+
+**Ownership.** Everything lives on your machine in plain files. Your project folder is the single source of truth — a git repo you can share, back up, or move anywhere. If you stop using Claude Code tomorrow, everything is still there.
 
 ---
 
@@ -30,9 +34,9 @@ But the real gap isn't storage or formats. It's three things that neither Projec
 
 There are four ingredients that turn an AI chatbot into something closer to an actual collaborator. None of them require technical expertise. Together, they solve almost every frustration described above.
 
-### Memory
+### Project Instructions
 
-Claude Code can remember your preferences, your project context, and the decisions you've made — across sessions, not just within one conversation. You set this up once, and you stop repeating yourself. The AI knows that you prefer plain language, that this project is for a specific client, that you decided three weeks ago to structure things a certain way. You don't brief it every morning.
+Chatbot apps have basic memory — they can recall things across conversations. Claude Code has that too. But it goes further with a file called `CLAUDE.md` that you write inside your project folder. It's your rulebook: what this project is about, how you prefer things written, what to avoid, what to always keep in mind. Claude reads it at the start of every session. Unlike memory, which Claude manages on its own, this is precise, project-specific, and entirely under your control. You write the rules. Claude follows them.
 
 ### Project Folder as Context
 
@@ -40,69 +44,65 @@ When Claude Code runs inside your project folder, it can see everything in it. E
 
 ### Git (Version Control)
 
-Git is a system that tracks every change made to a set of files. Developers use it for code, but it works just as well for documents, notes, and project files. Every change is recorded. You can undo anything. You can see exactly what changed, when, and why — the kind of safety net that means you can make bold edits without anxiety, because nothing is ever truly gone.
+Git is a system that tracks every change made to a set of files. Developers use it for code, but it works just as well for text-based documents, notes, and project files. Every change is recorded. You can undo anything. You can see exactly what changed, when, and why — the kind of safety net that means you can make bold edits without anxiety, because nothing is ever truly gone. Pair it with GitHub — a free online platform — and you have a remote backup of your entire project history, accessible from anywhere, shareable with collaborators, and synced with a single command.
 
 ### Markdown
 
 Markdown is a simple way of writing that tells any program how to format your text — headings, bold, lists — using plain characters you can type anywhere. It's readable as-is, renders beautifully in almost every tool, and doesn't lock you into any single application. Your documents aren't trapped in a proprietary format that only one company's software can open. They're just text files — permanent, portable, and understood by both humans and AI equally well.
 
----
-
-## 4. Same Brain, Different Relationship
-
-All of these tools — Desktop, Cowork, Claude Code — run on the same underlying model. Same reasoning, same capabilities, same Claude. The difference isn't intelligence. It's the relationship between the AI and your work.
-
-Think of it as a spectrum. Desktop is a conversation: you bring context, Claude responds. Cowork is a task runner: you describe a deliverable, Claude produces it. Claude Code is a workspace: Claude lives inside your project, sees everything, remembers across sessions, and operates within a system you've built — version control, custom instructions, specialized skills, automated triggers.
-
-The question isn't which one is "better." It's what you need. If you want quick answers, Desktop is fine. If you want a task done, Cowork is capable. If you want a system that manages your work over time — where nothing is lost, everything is tracked, and the AI gets better at your specific workflow the longer you use it — that's what Claude Code is for.
+This matters more than it sounds. In Claude Code, everything that shapes how the AI works — your project instructions, its memory, its skills, its rules — is written in markdown. It's become the standard format for building and configuring AI agents. Learning markdown isn't just about formatting documents anymore. Markdown is the language you and your AI both speak.
 
 ---
 
-## 5. The Mental Model
+> Note: All of these tools — Desktop, Cowork, Claude Code — run on the same model. The difference isn't intelligence; it's the relationship. Desktop is a conversation. Cowork is a task runner. Claude Code is a workspace — it lives inside your project, sees everything, remembers across sessions, and operates within a system you control. The question isn't which is better; it's what you need.
+
+---
+
+## 4. The Mental Model
 
 Here's the conceptual framework for Claude Code. You don't need all of these on day one. But knowing they exist means you'll recognize when one solves a problem you're having.
 
 ### Agent
 
-Claude Code isn't answering questions — it's taking actions. It reads files, creates documents, searches your project, and handles multi-step tasks from start to finish. You describe what you want; it figures out the steps and executes them. A chatbot waits for your next message. An agent goes and does the work. When the job is large enough, Claude Code can also spin up smaller sub-agents that handle different parts in parallel — one researching, one drafting, Claude coordinating and assembling the result. It's closer to delegating to a team than prompting a tool.
+Claude Code doesn't just answer questions — it takes actions. It reads files, creates documents, searches your project, and handles multi-step tasks start to finish. You describe what you want; it figures out the steps. When the job is big enough, it spins up sub-agents that work different parts in parallel.
 
 ### Context Management
 
-Claude Code works with a large conversation window — much bigger than typical chatbots — so you can have a long, detailed working session without hitting a wall. It automatically compresses earlier parts of the conversation as you go, so the session can keep running without you having to start over. More importantly, it reads your files on demand rather than requiring you to paste anything in. Your whole project is accessible at any moment, and Claude is smart about what it holds in focus at any given time.
+Claude Code has a large conversation window and automatically compresses earlier parts as you go, so sessions can run long without starting over. It reads your files on demand — your whole project is accessible without pasting anything in.
 
 ### Memory
 
-Claude Code can persist information across conversations — your preferences, your project context, decisions you've made. That means you stop repeating yourself every session. Over time, Claude learns how you work: the tone you prefer, the structure you like, the context you'd otherwise have to re-explain every morning.
+Claude Code persists information across conversations — your preferences, project context, past decisions. You stop repeating yourself every session. Over time, it learns how you work.
 
 ### CLAUDE.md
 
-CLAUDE.md is a file you write — inside your project folder — that tells Claude how to behave in that specific project. Think of it as standing instructions, like onboarding a new team member: "Here's how we do things here." Claude reads it at the start of every session, so your rules and preferences are always in effect without you having to repeat them.
+A file you write inside your project folder that tells Claude how to behave in that specific project — standing instructions, like onboarding a new team member. Claude reads it at the start of every session, so your rules are always in effect.
 
 ### Skills
 
-Skills are pre-written instructions that teach Claude specific abilities — how to handle a particular kind of task, follow a specific workflow, or operate in a certain domain. Think of it like hiring a specialist instead of a generalist. You install a skill, and Claude gains that capability. Different projects can have different skills loaded, depending on what you're working on.
-
-### Plugins
-
-Plugins are bundles of skills, commands, and tools packaged together into a single installable unit. Where a skill adds one capability, a plugin might add several related ones at once. Think of them like apps on your phone: each plugin installs a coherent set of abilities, and you choose which ones belong in your environment.
+Pre-written instructions that teach Claude specific abilities — a particular workflow, a domain, a kind of task. Install a skill, and Claude gains that capability. Different projects can have different skills loaded.
 
 ### MCP Servers
 
-MCP servers are bridges that connect Claude to external services — Gmail, Google Calendar, Notion, Slack, and others. By default, Claude Code works within your project folder. MCP servers are the doors you open so it can reach outside. Once a bridge is connected, Claude can read your emails, check your calendar, update a Notion page, or post to Slack — as part of a larger task, without you switching applications.
+Bridges that connect Claude to external services — Gmail, Google Calendar, Notion, Slack, and others. Once connected, Claude can read emails, check your calendar, or update a Notion page as part of a larger task, without you switching apps.
 
 ### Hooks
 
-Hooks are automated triggers that run whenever Claude takes a certain action. You define the rule: "When Claude does X, also do Y." Like email filters that sort your inbox without you lifting a finger, hooks run silently in the background. They're useful for enforcing consistency — automatically formatting files, logging activity, or running a check every time Claude saves something.
+Automated triggers that run whenever Claude takes a certain action. "When Claude does X, also do Y." Like email filters — they run silently in the background, enforcing consistency without you lifting a finger. For example, I have a hook that plays a sound whenever Claude finishes a long task, so I don't have to keep watching the screen.
+
+### Plugins
+
+Bundles of skills, commands, and tools packaged into a single installable unit — combining several of the above into one package. Think of them like apps on your phone: each one adds a coherent set of abilities.
 
 ---
 
-## 6. Getting Started
+## 5. Getting Started
 
 This walkthrough teaches the pattern. You bring your own content — your documents, your projects, your questions. The goal is to show you how the pieces fit together so you can apply them to whatever you're actually working on.
 
 ---
 
-### 6.1 Install Claude Code
+### 5.1 Install Claude Code
 
 The only slightly technical step. Claude Code runs in your terminal — the text-based command window built into every Mac and Windows computer. You'll also need Node.js (a free software runtime that Claude Code depends on) installed.
 
@@ -112,7 +112,7 @@ That page walks you through everything — don't try to skip steps. Once install
 
 ---
 
-### 6.2 Create Your Project Folder
+### 5.2 Create Your Project Folder
 
 Create a folder on your computer for the project you want to work on. This can be anything: a research project, a set of meeting notes, a collection of drafts, a client folder. The name doesn't matter. The principle does: everything related to one project lives in one folder.
 
@@ -122,7 +122,7 @@ Start simple. One folder. Put some files in it. You can organize further later.
 
 ---
 
-### 6.3 Start Claude Code
+### 5.3 Start Claude Code
 
 Open your terminal, navigate to your project folder, and type:
 
@@ -136,7 +136,7 @@ This is the shift. You're not visiting a chatbot and pasting in context. Claude 
 
 ---
 
-### 6.4 Start Working
+### 5.4 Start Working
 
 Talk to it the way you'd talk to a capable colleague who just got access to your files. Some examples of things you might actually say:
 
@@ -150,21 +150,32 @@ You don't need special syntax. You don't need to think like a programmer. The co
 
 If it gets something wrong, correct it. If you want more, ask for more. It's iterative and conversational throughout.
 
+**A note on sessions.** Claude works best with a focused context. The longer a session runs and the more topics you cover, the more cluttered its working memory gets — and the less sharp its responses become. A few habits that help:
+
+- **Start a new session for unrelated tasks.** Type `/clear` to wipe the conversation and start fresh. If you were editing a report and now want to brainstorm a completely different project, don't keep going in the same session — reset.
+- **Compact when a session gets long.** Type `/compact` to compress the conversation history. Claude keeps the key points but sheds the noise. Good for when you've been working on the same task for a while and things start feeling sluggish.
+- **One topic per session is a good default.** You wouldn't pile ten different meetings into one phone call. Same principle here.
+
 ---
 
-### 6.5 Save Your Progress with Git
+### 5.5 Save Your Progress with Git
 
-Git takes snapshots of your project over time. You don't need to learn any commands — just ask Claude: "commit my changes," "what changed since yesterday?", or "show me what this file looked like last week." Claude handles the mechanics.
+Git takes snapshots of your project over time. You don't need to learn any commands — just tell Claude what you want in plain language. Here's the workflow in practice:
 
-The payoff: a complete, searchable history of your project, the ability to undo anything, and a record that syncs across machines. Think of it as a life skill, not a developer skill — the habit of taking named snapshots before you make big changes is valuable far beyond Claude Code.
+- **Stage** — choose which changes to include in your next snapshot. Say: "stage the changes to my proposal draft" or "stage everything." Think of it as deciding what goes into the envelope before you seal it.
+- **Commit** — seal the envelope. This saves a named snapshot. Say: "commit my changes" or "commit with the message 'finished first draft of Q2 report'." Do this whenever you reach a natural stopping point — a finished draft, a reorganized folder, a set of edits you're happy with.
+- **Push** — send your snapshots to a remote backup (like GitHub). Say: "push my changes." This is how you sync across machines or keep an offsite copy. Not every commit needs a push — batch a few, then push when you're ready.
+- **Reverse** — undo anything. Say: "undo my last commit," "show me what this file looked like yesterday," or "revert the proposal back to last week's version." Nothing is permanent. Every snapshot is still there, and Claude can retrieve any of them.
+
+The payoff: a complete, searchable history of your project, the ability to undo anything, and a record that syncs across machines. The habit of taking named snapshots before you make big changes is valuable far beyond Claude Code.
 
 For a deeper introduction, see [Git for Document Management](git-for-docs.md).
 
 ---
 
-### 6.6 Make It Yours
+### 5.6 Make It Yours
 
-Create a file called `CLAUDE.md` inside your project folder. Write it in plain language. Tell Claude how you work:
+The quickest way to start: type `/init`. Claude scans your project and generates a `CLAUDE.md` file — a first draft of your project's rulebook. Review what it produces and edit it to fit. You can also create the file yourself from scratch. Either way, write it in plain language. Tell Claude how you work:
 
 - What this project is about
 - How you prefer things written (plain language, no jargon, bullet points vs. prose)
@@ -175,33 +186,57 @@ Claude reads this file at the start of every session. From that point on, your p
 
 This is where Claude Code stops being a generic tool and becomes yours. Every project can have its own `CLAUDE.md`. A client folder, a research project, a personal journal — each one can have different instructions, different tone, different rules. The setup is a one-time investment that pays off every session after.
 
----
+A few tips for keeping it useful over time:
 
-## 7. How I Built This Guide
-
-I want to be honest about something: I am not a developer. I don't write code, I don't know git commands from memory, and before this project I had never used a terminal for anything other than following instructions I didn't fully understand. I'm a knowledge worker. I manage documents, run projects, synthesize information, and communicate — that's my job.
-
-This entire guide was built using Claude Code. The thing you're reading right now is the proof of concept.
-
-Here's what the process actually looked like.
-
-I started by creating a folder on my computer called `ClaudeCode_for_non-tech`. Inside it, I wrote a `CLAUDE.md` file in plain language — who this guide is for, what tone it should have, what I wanted to avoid. Something like: "Audience is non-technical knowledge workers. Plain language. No jargon. Conversational but not casual. Don't be preachy." That file became the standing instructions Claude would read every session.
-
-Then I opened Claude Code inside that folder and started talking. I didn't have an outline. I had a loose idea of what I wanted to explain. So I asked Claude to brainstorm with me — using a structured brainstorming skill — and we worked through the shape of the guide together. What's the core argument? What does the audience already know? What do they need to understand before they can use any of this? That conversation produced a design document: a clear articulation of what this guide is trying to do and why.
-
-From the design document, Claude created an implementation plan — a section-by-section breakdown of what needed to be written, in what order, with notes on tone and emphasis for each. I reviewed it, made a couple of adjustments, and said go.
-
-Then Claude wrote it. One section at a time, reading the design spec and the plan as it went, committing each completed section to git as it finished. I read each draft, gave feedback, watched it revise. Sometimes I redirected. Sometimes I let it run.
-
-The thing I kept noticing: I didn't have to repeat myself. Claude knew the audience from the `CLAUDE.md`. It knew the structure from the plan. It knew the argument from the design spec. Between those three documents and the git history of everything we'd already written, it always had the context it needed. I wasn't bridging anything. I was just directing.
-
-Every decision is preserved in the git history. Every draft, every revision, every moment I changed course — all of it is recorded. I can see exactly when I decided to restructure Section 3 and what it looked like before. That would have been impossible to track in a chatbot.
-
-So when I describe the pattern — folder, markdown, git, agent — I'm not describing something I read about. I'm describing what I did to build what you're reading right now. The pattern works. I can confirm it from the inside.
+- **Keep it short.** Under 300 lines, ideally closer to 100. The longer it gets, the more Claude skims past things. Every line should earn its place.
+- **Be specific, not generic.** "Write in plain language" is useful. "Be helpful and accurate" is not — Claude already tries to do that.
+- **Don't repeat what the code already says.** If Claude can figure it out by reading your files, it doesn't need to be in `CLAUDE.md`.
+- **Prune regularly.** Rules that reference deleted files or outdated decisions become noise. Review it every few weeks.
+- **Use `/init` to get started.** It scans your project and generates a first draft. Always review and refine what it produces — it's a starting point, not a finished product.
 
 ---
 
-## 8. Recommended Tools
+## 6. How I Built This Guide with Claude Code
+
+I want to be honest about something: I'm a researcher. I both write code and manage documents, projects, and communication. But it was exactly that dual perspective that made me realize Claude Code could be useful far beyond coding. The document and project management side of my work — the part that has nothing to do with programming — benefited from it just as much. That's why I wrote this guide.
+
+This entire guide was built using Claude Code. The thing you're reading right now is the proof of concept. Here's what the process looked like:
+
+```mermaid
+flowchart LR
+    A["📁 Create folder\n+ GitHub repo"] --> B["💬 Talk to Claude\nabout the idea"]
+    B --> C["🔧 /init\nCLAUDE.md created"]
+    C --> D["🧠 Brainstorm\nwith skill"]
+    D --> E["✍️ First draft"]
+    E --> F["📌 Commit + push\ninitial repo"]
+    F --> G["👀 Review & revise"]
+    G --> H["📌 Commit + update\nCLAUDE.md"]
+    H --> G
+```
+
+**Step 1 — Create the folder and a GitHub repo.** I made a folder called `ClaudeCode_for_non-tech` on my computer and created a matching repository on GitHub. Nothing in it yet — just the empty container.
+
+**Step 2 — Open Claude Code and start talking.** I opened Claude Code inside the empty folder and described what I wanted to build. No outline, no structure — just a conversation about the idea. What's the audience? What's the point? What should it cover? A few rounds of back and forth to get the shape of the project clear.
+
+**Step 3 — `/init` and link to GitHub.** Once Claude understood the project, I ran `/init`. Claude scanned our conversation and generated a `CLAUDE.md` file with the project's purpose, audience, tone, and rules already filled in. I also had Claude link the local folder to the remote GitHub repo so everything would stay in sync.
+
+**Step 4 — Brainstorm with a skill.** This is where it got serious. I used the brainstorming skill (type `/brainstorm` if you have the Superpowers plugin installed). Instead of just writing, Claude asked me questions — thorough, specific ones that forced me to refine vague ideas into clear decisions. What does the reader already know? What's the core argument? What should come first? I highly recommend using the skill rather than just prompting freehand — it thinks more thoroughly than you'd think to ask for.
+
+**Step 5 — First draft, then commit and push.** Claude wrote the first draft based on everything we'd worked out. Once it was down, I committed and pushed to GitHub — saving the initial version of the repo. Now there's a baseline to build from, and a backup in the cloud.
+
+**Step 6 — Review and revise.** I read through the draft, gave feedback, redirected where needed. Claude revised. This is the iterative part — conversational, back and forth, same as working with a colleague.
+
+**Step 7 — The editing loop: save, commit, update CLAUDE.md.** For each chunk of edits, the cycle repeats: make changes, commit them to git, and update `CLAUDE.md` if the project's rules or direction have shifted. This keeps everything in sync — the document, the history, and the instructions Claude follows. Every round of edits is preserved and the rulebook stays current.
+
+**The thing I kept noticing:** I never had to repeat myself. Claude knew the audience from `CLAUDE.md`, the structure from the plan, the argument from the brainstorm. I wasn't bridging anything — I was just directing.
+
+Every decision is in the git history. Every draft, every revision, every moment I changed course. I can see exactly when I restructured Section 3 and what it looked like before. That would have been impossible to track in a chatbot.
+
+So when I describe the pattern — folder, markdown, git, agent — I'm describing what I did to build what you're reading now. The pattern works. I can confirm it from the inside.
+
+---
+
+## 7. Recommended Tools
 
 These are the additions that made the most difference. You don't need all of them on day one, but each one extends Claude Code in a direction that's genuinely useful for knowledge workers.
 
@@ -215,7 +250,7 @@ For a deeper guide on what Skills are and how to find more, see [Understanding S
 
 ---
 
-## 9. Go Explore
+## 8. Go Explore
 
 The pattern is simple: folder, markdown, git, agent. That's all four ingredients. You don't need to master them before you start — you learn them by using them.
 
