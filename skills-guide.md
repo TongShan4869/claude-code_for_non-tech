@@ -26,6 +26,17 @@ There are three main sources:
 - **Community-built plugins on GitHub** — the broader Claude Code community publishes plugins publicly. Quality varies, but many are excellent and cover niche use cases the official registry doesn't.
 - **Asking Claude directly** — if you're not sure what's available, just ask: "What plugins are available?" Claude can surface options relevant to what you're trying to do.
 
+**Skills marketplaces** — browse and discover skills from these directories:
+
+- [skillsmp.com](https://skillsmp.com) — skills marketplace
+- [aitmpl.com/skills](https://aitmpl.com/skills) — AI template skills directory
+- [skills.sh](https://skills.sh/) — searchable skills catalog
+
+**GitHub resources** — curated collections worth bookmarking:
+
+- [Awesome Claude Skills](https://github.com/travisvn/awesome-claude-skills) — the best curated skill list, 22k+ stars
+- [Anthropic Skills Repo](https://github.com/anthropics/skills) — official reference implementations from Anthropic
+
 ---
 
 ## How to Install a Plugin
@@ -33,7 +44,7 @@ There are three main sources:
 Installation is straightforward. You don't need to touch any configuration files or run any commands yourself.
 
 1. **Find a plugin you want.** Either browse the registry, search GitHub, or ask Claude for a recommendation.
-2. **Ask Claude to install it.** You can say something like "Install the superpowers plugin" or paste in a GitHub URL: "Install this plugin: github.com/example/plugin-name."
+2. **Install it.** Type `/plugin` in your Claude Code session — this opens the plugin manager where you can search and install plugins directly. Or just ask Claude: "Install the superpowers plugin" or paste in a GitHub URL: "Install this plugin: github.com/example/plugin-name."
 3. **Claude handles the rest.** It fetches and installs the plugin without any further input from you.
 4. **The skills are now available.** From that point on in your sessions, the skills that came with the plugin are active and ready to use.
 
@@ -63,6 +74,8 @@ Once installed, skills work in two ways:
 - `/commit` — triggers a commit skill
 - `/brainstorm` — triggers a brainstorming skill
 
+Not sure what's available? Type `/skills` to see a list of all skills currently installed in your session.
+
 This is useful when you want to be deliberate about which approach you're using, or when the automatic detection doesn't fire.
 
 ---
@@ -74,6 +87,22 @@ This is useful when you want to be deliberate about which approach you're using,
 **Committing code changes.** You type `/commit`. Claude reviews everything that's changed in your working files, groups related changes together, writes a commit message that explains the "why" rather than just the "what," and creates a clean git commit. For someone new to version control, this turns a confusing manual process into a one-word command.
 
 **Turning a vague goal into a plan.** You say: "I want to overhaul how our team handles client onboarding." A writing plans skill takes that and builds it out into a concrete, step-by-step plan with clear phases, ownership suggestions, and defined deliverables. Instead of an open-ended conversation, you get a structured document you can act on immediately.
+
+---
+
+## Must-Have Skills for Document Workers
+
+These are the skills that make the biggest difference if your work revolves around documents, reports, and communication. All are official Anthropic skills — free, maintained, and ready to install.
+
+**[PDF Processing](https://github.com/anthropics/skills/tree/main/skills/pdf)** — Read PDFs, extract tables, fill forms, merge multiple files, split pages apart. If you deal with PDFs regularly, this is the single highest-utility skill you can install.
+
+**[DOCX](https://github.com/anthropics/skills/tree/main/skills/docx)** — Create and edit Word documents with formatting, tracked changes, and comments. Useful when your output needs to be a `.docx` file that colleagues or clients can open in Word.
+
+**[PPTX](https://github.com/anthropics/skills/tree/main/skills/pptx)** — Build slide decks from natural language. Layouts, charts, speaker notes — describe what you want and Claude assembles the presentation.
+
+**[XLSX](https://github.com/anthropics/skills/tree/main/skills/xlsx)** — Work with spreadsheets in plain English. Formulas, analysis, charts — without needing to remember Excel syntax.
+
+**[Doc Co-Authoring](https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring)** — A structured workflow for writing documents together with Claude. You write, Claude responds, back and forth — real collaborative writing rather than "generate me a draft."
 
 ---
 
