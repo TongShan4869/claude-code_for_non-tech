@@ -6,6 +6,8 @@
   <img src="https://img.shields.io/badge/version-1.0-blue" alt="Version">
 </p>
 
+我的同事看着我用 Claude Code 头脑风暴、做深度调研、阅读文档和论文、写脚本、总结文档，还把进度导出成 PPTX 用于组会汇报。全程都在 Claude Code 里完成。她很震惊，问我怎么做到的，说我简直住在 Claude Code 里了。我承认，我现在做什么都离不开 AI 了。但它确实让我的效率提升了至少 10 倍。所以我觉得有必要写一篇东西，给那些还不太敢把 Claude Code 用在编程以外场景的人看看。
+
 ---
 
 ## 1. 其实，你已经在路上了

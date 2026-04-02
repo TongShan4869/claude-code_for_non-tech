@@ -6,6 +6,8 @@
   <img src="https://img.shields.io/badge/version-1.0-blue" alt="Version">
 </p>
 
+My colleague watched me brainstorm ideas, do deep research, read documents and papers, write scripts, summarize a document, and export my progress as a PPTX for a group meeting presentation. All done in Claude Code. She was amazed and asked how I did all of this, like I live in Claude Code. I admit I've become very AI-native for everything now. But it has genuinely sped up my efficiency by at least 10x. So I figured it made sense to write this for those who are reluctant to use Claude Code beyond coding.
+
 ---
 
 ## 1. You're Already Halfway There
