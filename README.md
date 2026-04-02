@@ -36,7 +36,7 @@ There are four ingredients that turn an AI chatbot into something closer to an a
 
 ### Project Instructions
 
-Chatbot apps have basic memory. They can recall things across conversations, and Claude Code has that too. But it goes further with a file called `CLAUDE.md` that you write inside your project folder. It's your rulebook: what this project is about, how you prefer things written, what to avoid, what to always keep in mind. Claude reads it at the start of every session. Unlike memory, which Claude manages on its own, this is precise, project-specific, and entirely under your control. You write the rules. Claude follows them.
+Chatbot apps have basic memory. They can recall things across conversations, and Claude Code has that too. But it goes further with a file called `CLAUDE.md` that you write inside your project folder. It's your rulebook: what this project is about, how you prefer things written, what to avoid, what to always keep in mind. Claude reads it at the start of every session. Unlike memory, which Claude manages on its own, this is precise, project-specific, and entirely under your control. You write the rules. Claude follows them. Want to see what one looks like? Here's [this project's CLAUDE.md](CLAUDE.md).
 
 ### Project Folder as Context
 
