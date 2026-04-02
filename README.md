@@ -5,19 +5,20 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/version-1.0-blue" alt="Version">
   <br>
+  <a href="https://tongshan4869.github.io/"><img src="https://img.shields.io/badge/Website-tongshan4869.github.io-4285F4?logo=googlechrome&logoColor=white" alt="Website"></a>
   <a href="https://github.com/TongShan4869"><img src="https://img.shields.io/badge/GitHub-TongShan4869-181717?logo=github" alt="GitHub"></a>
   <a href="https://www.linkedin.com/in/tongshan-cu/"><img src="https://img.shields.io/badge/LinkedIn-Tong%20Shan-0A66C2?logo=linkedin" alt="LinkedIn"></a>
 </p>
 
-> *My colleague watched me brainstorm ideas, do deep research, read documents and papers, write scripts, summarize a document, and export my progress as a PPTX for a group meeting presentation. All done in Claude Code. She was amazed and asked how I did all of this, like I live in Claude Code. I admit I've become very AI-native for everything now. But it has genuinely sped up my efficiency by at least 10x. So I figured it made sense to write this for those who are reluctant to use Claude Code beyond coding.*
+> *My friend watched me brainstorm ideas, do deep research, read documents and papers, write scripts, summarize a document, and export my progress as a PPTX for a group meeting presentation. All done in Claude Code. She was amazed and asked how I did all of this, like I live in Claude Code. I admit I've become very AI-native for everything now. But it has genuinely sped up my efficiency by at least 10x. So I figured it made sense to write this for those who are reluctant to use Claude Code beyond coding.*
 
 ---
 
 ## 1. You're Already Halfway There
 
-You already use AI. Chatbots, maybe Claude's Projects or Cowork, maybe ChatGPT. You've gotten comfortable asking it questions, drafting emails, summarizing documents. These tools are genuinely capable.
+You already use AI. Chatbots, maybe Claude's Projects or Cowork, maybe ChatGPT or even OpenClaw. You've gotten comfortable asking it questions, drafting emails, summarizing documents. These tools are genuinely capable.
 
-So why would you want something else? Because there's a difference between a tool that completes tasks for you and a system that manages your work over time. Claude Code is the latter. The name has "code" in it, which scares people off, but Claude Code can do far more than write software. It manages documents, organizes projects, tracks changes, brainstorms ideas, drafts reports, and builds workflows. It just happens to run in a terminal. Most people don't know it exists, let alone that it's available to non-developers.
+So why would you want something else? Because there's a difference between a tool that completes tasks for you and a system that manages your work over time. Claude Code is the latter. The name has "code" in it, which scares people off, but Claude Code can do far more than write software. It manages documents, organizes projects, tracks changes, brainstorms ideas, drafts reports, and builds workflows. It just happens to run in a terminal, from ideation and creation to deliverables.
 
 ---
 
@@ -34,8 +35,6 @@ But the real gap isn't storage or formats. It's three things that neither Projec
 **Deep customization.** Claude Code has an entire ecosystem: Skills that teach Claude specialized workflows, plugins that add bundles of new capabilities, hooks that automate triggers, MCP servers that connect Claude to your email, calendar, Slack, and more. You shape how the agent works, totally customized to your work style, not just what you ask it to do.
 
 **Extensibility.** Cowork can only do what Anthropic has built into it. If a feature doesn't exist yet, you wait. With Claude Code, you describe what you need and Claude builds it for you. A custom tool, a new workflow, an automation, right there in your session. You're not limited to someone else's product roadmap.
-
-**Collaboration, not delegation.** Claude Code is a live working session. You redirect mid-task, build on what Claude just did, learn from the process. It's closer to working with a colleague than assigning work to an assistant.
 
 **Ownership.** Everything lives on your machine in plain files. Your project folder is the single source of truth, a git repo you can share, back up, or move anywhere. If you stop using Claude Code tomorrow, everything is still there.
 

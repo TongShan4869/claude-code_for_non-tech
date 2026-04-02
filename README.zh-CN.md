@@ -5,6 +5,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/version-1.0-blue" alt="Version">
   <br>
+  <a href="https://tongshan4869.github.io/"><img src="https://img.shields.io/badge/Website-tongshan4869.github.io-4285F4?logo=googlechrome&logoColor=white" alt="Website"></a>
   <a href="https://github.com/TongShan4869"><img src="https://img.shields.io/badge/GitHub-TongShan4869-181717?logo=github" alt="GitHub"></a>
   <a href="https://www.linkedin.com/in/tongshan-cu/"><img src="https://img.shields.io/badge/LinkedIn-Tong%20Shan-0A66C2?logo=linkedin" alt="LinkedIn"></a>
 </p>
@@ -17,7 +18,7 @@
 
 你已经在用 AI 了。聊天机器人，也许是 Claude 的 Projects 或 Cowork（均为 Claude Desktop 的功能），也许是 ChatGPT。你已经习惯了让它回答问题、起草邮件、总结文档。这些工具确实很能干。
 
-那为什么还要换别的？因为"帮你完成任务的工具"和"帮你长期管理工作的系统"之间，有本质的区别。Claude Code 属于后者。名字里带个"Code"，听起来像是给程序员用的，很多人一看名字就跳过了。但 Claude Code 的能力远不止写代码。它能管理文档、组织项目、追踪变更、头脑风暴、起草报告、搭建工作流。只不过它运行在终端（Terminal）里。大多数人根本不知道它的存在，更不知道非开发者也能用。
+那为什么还要换别的？因为"帮你完成任务的工具"和"帮你长期管理工作的系统"之间，有本质的区别。Claude Code 属于后者。名字里带个"Code"，听起来像是给程序员用的，很多人一看名字就跳过了。但 Claude Code 的能力远不止写代码。它能管理文档、组织项目、追踪变更、头脑风暴、起草报告、搭建工作流。只不过它运行在终端（Terminal）里，从构思、创作到交付，全程覆盖。
 
 ---
 
