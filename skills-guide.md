@@ -84,7 +84,11 @@ This is useful when you want to be deliberate about which approach you're using,
 
 ## Three Examples in Practice
 
+Skills handle everything from small errands to ambitious projects.
+
 **Processing conference receipts for reimbursement.** You drop all your receipt photos and PDFs into your conference project folder and say: "Scan the receipts, combine them into one PDF, and make a summary by date and category." Claude already knows the conference details from the folder — you don't need to re-explain the trip. It reads every receipt, organizes them, and produces both a merged file and a clean expense summary ready for reimbursement.
+
+**Building a presentation from meeting notes.** You have a month of meeting notes in your project folder and a leadership review coming up. You say: "Turn these into a 10-slide deck summarizing our Q2 progress." With the PPTX skill, Claude reads through your notes, pulls out the key points, and assembles a slide deck with structure, speaker notes, and charts. No copy-pasting between apps, no reformatting.
 
 **Turning a vague goal into a plan.** You say: "I want to overhaul how our team handles client onboarding." A writing plans skill takes that and builds it out into a concrete, step-by-step plan with clear phases, ownership suggestions, and defined deliverables. Instead of an open-ended conversation, you get a structured document you can act on immediately.
 
@@ -92,7 +96,9 @@ This is useful when you want to be deliberate about which approach you're using,
 
 ## Must-Have Skills for Knowledge Workers
 
-These are the skills that make the biggest difference if your work revolves around documents, reports, and communication. All are official Anthropic skills — free, maintained, and ready to install.
+These are the skills that make the biggest difference if your work revolves around documents, reports, and communication.
+
+**[Superpowers](https://github.com/nicobailon/superpowers)** — A powerhouse plugin that bundles skills for brainstorming, structured planning, test-driven development, systematic debugging, code review, and more. Installs as one plugin, gives you a full toolkit of structured workflows.
 
 **[PDF Processing](https://github.com/anthropics/skills/tree/main/skills/pdf)** — Read PDFs, extract tables, fill forms, merge multiple files, split pages apart. If you deal with PDFs regularly, this is the single highest-utility skill you can install.
 

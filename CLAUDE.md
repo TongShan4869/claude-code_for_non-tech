@@ -25,13 +25,15 @@ A guide for non-technical knowledge workers to use Claude Code as an AI-assisted
 - **All content is in Markdown.** This is both the subject matter and the format we use.
 - **Frame everything around document/project management,** not software engineering.
 - **Tone: conversational, confident, not preachy.** "Here's what I discovered" not "you should do this."
-- **Explain Claude Code concepts in practical terms** — what they do for the user, not how they work internally.
+- **Explain Claude Code concepts in practical terms.** What they do for the user, not how they work internally.
+- **Go easy on em dashes.** Use periods, commas, colons, or parentheses instead. Too many em dashes reads like AI-generated text.
 
 ## Repository Structure
 
 - `README.md` — Main article (works as GitHub landing page and standalone blog post)
-- `skills-guide.md` — Supplementary deep-dive on Skills
+- `skills-guide.md` — Supplementary deep-dive on Skills, including must-have skills for knowledge workers and discovery resources
 - `git-for-docs.md` — Supplementary deep-dive on git for document management
-- `docs/superpowers/specs/` — Design spec
-- `docs/superpowers/plans/` — Implementation plan
+- `demo.gif` — Screen recording of Claude Code in action, embedded in README
+- `docs/superpowers/specs/` — Design spec (linked from README section 6)
+- `docs/superpowers/plans/` — Implementation plan (linked from README section 6)
 - No build system, no tests, no dependencies — this is a documentation project
