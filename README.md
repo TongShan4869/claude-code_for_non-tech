@@ -64,6 +64,12 @@ Markdown is a simple way of writing that tells any program how to format your te
 
 In Claude Code, everything that shapes how the AI works (your project instructions, its memory, its skills, its rules) is written in markdown. It's become the standard format for building and configuring AI agents. Learning markdown isn't just about formatting documents anymore. Markdown is the language you and your AI both speak.
 
+New to Markdown? These resources will get you up to speed quickly:
+
+- [Markdown Guide](https://www.markdownguide.org/) — a comprehensive, beginner-friendly reference. Start with the [Getting Started](https://www.markdownguide.org/getting-started/) page and [Basic Syntax](https://www.markdownguide.org/basic-syntax/) cheat sheet.
+- [CommonMark Tutorial](https://commonmark.org/help/tutorial/) — an interactive 10-minute tutorial where you practice as you learn.
+- [GitHub's Markdown Documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) — covers the GitHub-flavored extensions (tables, task lists, alerts) that you'll encounter in Claude Code projects.
+
 ### Git (Version Control)
 
 Git is a system that tracks every change made to a set of files. Developers use it for code, but it works just as well for text-based documents, notes, and project files. Every change is recorded. You can undo anything. You can see exactly what changed, when, and why. That kind of safety net means you can make bold edits without anxiety, because nothing is ever truly gone. Pair it with GitHub (a free online platform) and you have a remote backup of your entire project history, accessible from anywhere, shareable with collaborators, and synced with a single command.

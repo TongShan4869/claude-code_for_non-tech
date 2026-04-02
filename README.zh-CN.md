@@ -64,6 +64,12 @@ Markdown 是一种简单的写作格式，用普通字符（随便在哪都能�
 
 在 Claude Code 里，所有塑造 AI 工作方式的东西（项目指令、记忆、技能、规则）都用 Markdown 写成。它已经成为构建和配置 AI 智能体的标准格式。学 Markdown 不再只是为了排版文档。Markdown 是你和你的 AI 共同的语言。
 
+刚接触 Markdown？以下资源能帮你快速上手：
+
+- [Markdown Guide](https://www.markdownguide.org/) — 全面且对新手友好的参考站点。从 [Getting Started](https://www.markdownguide.org/getting-started/) 页面和 [Basic Syntax](https://www.markdownguide.org/basic-syntax/) 速查表开始。
+- [CommonMark 互动教程](https://commonmark.org/help/tutorial/) — 10 分钟的互动教程，边学边练。
+- [GitHub Markdown 文档](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) — 涵盖 GitHub 风格的扩展语法（表格、任务列表、提示框），这些在 Claude Code 项目中会经常用到。
+
 ### Git（版本控制）
 
 Git 是一套追踪文件所有变更的系统。开发者用它管理代码，但它对文本文档、笔记和项目文件同样好用。每一处改动都有记录。任何操作都可以撤销。你能精确看到什么改了、什么时候改的、为什么改。这种安全网意味着你可以大胆编辑而不焦虑，因为没有任何东西会真正消失。搭配 GitHub（一个免费的在线平台），你就有了整个项目历史的远程备份，随时随地可访问、可与协作者共享、一条命令就能同步。
