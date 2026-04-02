@@ -4,6 +4,9 @@
   <a href="README.zh-CN.md"><img src="https://img.shields.io/badge/lang-中文版-red" alt="中文版"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/version-1.0-blue" alt="Version">
+  <br>
+  <a href="https://github.com/TongShan4869"><img src="https://img.shields.io/badge/GitHub-TongShan4869-181717?logo=github" alt="GitHub"></a>
+  <a href="https://www.linkedin.com/in/tongshan-cu/"><img src="https://img.shields.io/badge/LinkedIn-Tong%20Shan-0A66C2?logo=linkedin" alt="LinkedIn"></a>
 </p>
 
 > *My colleague watched me brainstorm ideas, do deep research, read documents and papers, write scripts, summarize a document, and export my progress as a PPTX for a group meeting presentation. All done in Claude Code. She was amazed and asked how I did all of this, like I live in Claude Code. I admit I've become very AI-native for everything now. But it has genuinely sped up my efficiency by at least 10x. So I figured it made sense to write this for those who are reluctant to use Claude Code beyond coding.*
