@@ -48,6 +48,8 @@ It's four things that neither Projects nor Cowork can give you:
 
 There are four ingredients that turn an AI chatbot into something closer to an actual collaborator. None of them require technical expertise.
 
+![Infographic: the four ingredients — Project Folder, CLAUDE.md, Git, and Markdown](assets/infographic.png)
+
 ### Project Folder as Context
 
 When Claude Code runs inside your project folder, it can see everything in it. Every file, every document, every subfolder, always available without you pasting anything. Instead of handing it a snippet and hoping that's the right snippet, it reads the whole picture. This changes what you can ask it to do.
