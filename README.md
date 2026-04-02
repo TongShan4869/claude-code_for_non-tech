@@ -1,5 +1,7 @@
 # How Non-Technical Knowledge Workers Can Use Claude Code to Actually Manage Their Projects
 
+[![中文版](https://img.shields.io/badge/lang-中文版-red)](README.zh-CN.md) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Version](https://img.shields.io/badge/version-1.0-blue)](.)
+
 ---
 
 ## 1. You're Already Halfway There
@@ -200,7 +202,7 @@ A few tips for keeping it useful over time:
 
 ## 6. How I Built This Guide with Claude Code
 
-I want to be honest about something: I'm a researcher. I both write code and manage documents, projects, and communication. But it was exactly that dual perspective that made me realize Claude Code could be useful far beyond coding. The document and project management side of my work, the part that has nothing to do with programming, benefited from it just as much. That's why I wrote this guide.
+I'm a researcher. I both write code and manage documents, projects, and communication. But it was exactly that dual perspective that made me realize Claude Code could be useful far beyond coding. The document and project management side of my work, the part that has nothing to do with programming, benefited from it just as much. That's why I wrote this guide.
 
 This entire guide was built using Claude Code. The thing you're reading right now is the proof of concept. Here's what the process looked like:
 
