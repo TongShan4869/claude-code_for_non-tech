@@ -1,6 +1,10 @@
-# How Non-Technical Knowledge Workers Can Use Claude Code to Actually Manage Their Projects
+<h1 align="center">How Non-Technical Knowledge Workers Can Use Claude Code to Actually Manage Their Projects</h1>
 
-[![中文版](https://img.shields.io/badge/lang-中文版-red)](README.zh-CN.md) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Version](https://img.shields.io/badge/version-1.0-blue)](.)
+<p align="center">
+  <a href="README.zh-CN.md"><img src="https://img.shields.io/badge/lang-中文版-red" alt="中文版"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+  <img src="https://img.shields.io/badge/version-1.0-blue" alt="Version">
+</p>
 
 ---
 
@@ -36,23 +40,23 @@ But the real gap isn't storage or formats. It's three things that neither Projec
 
 There are four ingredients that turn an AI chatbot into something closer to an actual collaborator. None of them require technical expertise.
 
-### Project Instructions
-
-Chatbot apps have basic memory. They can recall things across conversations, and Claude Code has that too. But it goes further with a file called `CLAUDE.md` that you write inside your project folder. It's your rulebook: what this project is about, how you prefer things written, what to avoid, what to always keep in mind. Claude reads it at the start of every session. Unlike memory, which Claude manages on its own, this is precise, project-specific, and entirely under your control. You write the rules. Claude follows them. Want to see what one looks like? Here's [this project's CLAUDE.md](CLAUDE.md).
-
 ### Project Folder as Context
 
 When Claude Code runs inside your project folder, it can see everything in it. Every file, every document, every subfolder, always available without you pasting anything. Instead of handing it a snippet and hoping that's the right snippet, it reads the whole picture. This changes what you can ask it to do.
 
-### Git (Version Control)
+### Project Instructions (CLAUDE.md)
 
-Git is a system that tracks every change made to a set of files. Developers use it for code, but it works just as well for text-based documents, notes, and project files. Every change is recorded. You can undo anything. You can see exactly what changed, when, and why. That kind of safety net means you can make bold edits without anxiety, because nothing is ever truly gone. Pair it with GitHub (a free online platform) and you have a remote backup of your entire project history, accessible from anywhere, shareable with collaborators, and synced with a single command.
+Chatbot apps have basic memory. They can recall things across conversations, and Claude Code has that too. But it goes further with a file called `CLAUDE.md` that you write inside your project folder. It's your rulebook: what this project is about, how you prefer things written, what to avoid, what to always keep in mind. Claude reads it at the start of every session. Unlike memory, which Claude manages on its own, this is precise, project-specific, and entirely under your control. You write the rules. Claude follows them. Want to see what one looks like? Here's [this project's CLAUDE.md](CLAUDE.md).
 
 ### Markdown
 
 Markdown is a simple way of writing that tells any program how to format your text (headings, bold, lists) using plain characters you can type anywhere. It's readable as-is, renders beautifully in almost every tool, and doesn't lock you into any single application. Your documents aren't trapped in a proprietary format that only one company's software can open. They're just text files. Permanent, portable, and understood by both humans and AI equally well.
 
 This matters more than it sounds. In Claude Code, everything that shapes how the AI works (your project instructions, its memory, its skills, its rules) is written in markdown. It's become the standard format for building and configuring AI agents. Learning markdown isn't just about formatting documents anymore. Markdown is the language you and your AI both speak.
+
+### Git (Version Control)
+
+Git is a system that tracks every change made to a set of files. Developers use it for code, but it works just as well for text-based documents, notes, and project files. Every change is recorded. You can undo anything. You can see exactly what changed, when, and why. That kind of safety net means you can make bold edits without anxiety, because nothing is ever truly gone. Pair it with GitHub (a free online platform) and you have a remote backup of your entire project history, accessible from anywhere, shareable with collaborators, and synced with a single command.
 
 ---
 
