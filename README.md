@@ -133,6 +133,8 @@ The official setup instructions are here: https://docs.anthropic.com/en/docs/cla
 
 That page walks you through everything. Don't try to skip steps. Once installation is done, the rest of this guide is straightforward.
 
+**Not comfortable with the terminal?** Claude Code also comes as a [desktop app](https://claude.ai/download) (Mac and Windows) and a [web app](https://claude.ai/code) you can use right in your browser. Both give you the same capabilities without needing to open a terminal yourself. The desktop app is the easiest starting point if the command line feels unfamiliar.
+
 If you prefer to see and edit your files visually rather than working entirely in the terminal, consider using an IDE like VS Code. It lets you edit documents with a live markdown preview, manage your project folder, and run Claude Code in the built-in terminal, all in one window.
 
 ![IDE setup: source editor on the left, markdown preview on the right, Claude Code in the terminal below](assets/ide-setup.png)
@@ -176,6 +178,22 @@ Talk to it the way you'd talk to a capable colleague who just got access to your
 - "What are the open questions across all my notes?"
 
 You don't need special syntax. You don't need to think like a programmer. The conversation is the same as chatting with Claude Desktop — the difference is that Claude now has your actual files in front of it, not just what you chose to paste.
+
+Here's what a real exchange looks like. Say you have a folder with a dozen meeting notes from the past month:
+
+> **You:** What are the main action items across all my meeting notes?
+>
+> **Claude:** I'll read through your meeting notes. *(reads all 12 files)* Here are the open action items I found across your notes:
+> - **Henderson proposal:** Sarah needs to send revised budget by Friday (from March 12 meeting)
+> - **Q2 planning:** You committed to drafting the timeline, not yet done (from March 18 meeting)
+> - **Client onboarding:** Waiting on legal review of the new contract template (from March 24 meeting)
+> - *(3 more items...)*
+>
+> **You:** Pull out just the ones assigned to me and put them in a new file called my-action-items.md
+>
+> **Claude:** Done. I've created `my-action-items.md` with your 4 action items, organized by deadline.
+
+That's it. No copying and pasting between files. No searching through documents yourself. Claude read everything, found what mattered, and created the output you asked for.
 
 If it gets something wrong, correct it. If you want more, ask for more. It's iterative and conversational throughout.
 
@@ -222,6 +240,26 @@ A few tips for keeping it useful over time:
 - **Don't repeat what the code already says.** If Claude can figure it out by reading your files, it doesn't need to be in `CLAUDE.md`.
 - **Prune regularly.** Rules that reference deleted files or outdated decisions become noise. Review it every few weeks.
 - **Use `/init` to get started.** It scans your project and generates a first draft. Always review and refine what it produces — it's a starting point, not a finished product.
+
+---
+
+### 5.7 When Things Go Wrong
+
+Claude is capable, but it's not infallible. Here's how to handle the most common stumbling blocks.
+
+**Claude edited the wrong file or made a bad change.** Type `/undo`. This reverses Claude's last action. You can also say "undo that" or "revert the last change" in plain language. If you've been committing regularly with git, you can go back further: "revert to my last commit."
+
+**Claude seems confused or its responses are getting worse.** Long sessions accumulate context that can muddy things. Type `/clear` to wipe the conversation and start fresh. Your files are untouched; only the conversation resets. For a softer reset, try `/compact` to compress the history without losing it entirely.
+
+**Claude misunderstood what you wanted.** Just correct it, the same way you would with a colleague. "No, I meant the Q2 report, not the Q1 one." or "That's too formal, rewrite it in a casual tone." You don't need to start over. Claude adjusts based on your feedback within the same conversation.
+
+**Claude can't find a file you know exists.** It might be looking in the wrong place. Be specific: "Read the file called proposal-v2.md in the clients folder." You can also say "list all files in this folder" to see what Claude sees.
+
+**You want to see what Claude changed before accepting it.** Say "show me a diff of what you just changed" or "what did you modify?" Claude will show you exactly what lines were added, removed, or edited. If you use git, "show me the diff" gives you a complete picture of all uncommitted changes.
+
+**Something broke and you're not sure what happened.** Don't panic. If you've been using git, everything is recoverable. Say "show me the git log" to see your recent snapshots, then "revert to [that commit]" to go back to a known good state. If you haven't been using git, `/undo` can still step back through Claude's recent actions.
+
+The general principle: if Claude does something you don't like, say so. If the session feels off, start a new one. If you committed your work, you can always get back to it.
 
 ---
 
