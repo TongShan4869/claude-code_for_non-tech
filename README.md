@@ -206,14 +206,21 @@ This entire guide was built using Claude Code. The thing you're reading right no
 
 ```mermaid
 flowchart TD
-    A["📁 Create folder\n+ GitHub repo"] --> B["💬 Talk to Claude\nabout the idea"]
-    B --> C["🔧 /init\nCLAUDE.md created"]
-    C --> D["🧠 Brainstorm\nwith skill"]
-    D --> E["✍️ First draft"]
-    E --> F["📌 Commit + push\ninitial repo"]
-    F --> G["👀 Review & revise"]
-    G --> H["📌 Commit + update\nCLAUDE.md"]
-    H --> G
+    A["📁 Create folder + GitHub repo"] --> B["💬 Describe the idea to Claude"]
+    B --> C["🔧 Run /init — CLAUDE.md generated"]
+    C --> D["🧠 /brainstorm — refine the plan"]
+    D --> E["✍️ Claude writes first draft"]
+    E --> F["📌 Commit + push to GitHub"]
+    F --> G["👀 Review & give feedback"]
+    G --> H["✍️ Claude revises"]
+    H --> I["📌 Commit + update CLAUDE.md"]
+    I -->|"repeat"| G
+
+    style A fill:#e8f4e8,stroke:#4a9e4a
+    style C fill:#fff3e0,stroke:#f5a623
+    style D fill:#fff3e0,stroke:#f5a623
+    style F fill:#e3f2fd,stroke:#2196f3
+    style I fill:#e3f2fd,stroke:#2196f3
 ```
 
 **Step 1 — Create the folder and a GitHub repo.** I made a folder called `ClaudeCode_for_non-tech` on my computer and created a matching repository on GitHub. Nothing in it yet — just the empty container.
