@@ -32,7 +32,7 @@ But the real gap isn't storage or formats. It's three things that neither Projec
 
 ## 3. The Formula: Four Things That Change Everything
 
-There are four ingredients that turn an AI chatbot into something closer to an actual collaborator. None of them require technical expertise. Together, they solve almost every frustration described above.
+There are four ingredients that turn an AI chatbot into something closer to an actual collaborator. None of them require technical expertise.
 
 ### Project Instructions
 
