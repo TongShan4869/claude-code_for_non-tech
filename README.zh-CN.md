@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="cover-zh.png" alt="封面：非技术知识工作者如何使用 Claude Code 实际管理项目" width="800">
+</p>
+
 <h1 align="center">非技术知识工作者如何用 Claude Code 真正管理自己的项目</h1>
 
 <p align="center">
