@@ -28,7 +28,7 @@ Claude Desktop's Projects gives you memory and context on Anthropic's servers. C
 
 Claude Code gives you the full system. Your local machine has no upload limits, no format restrictions, no imposed structure. A folder on your computer can hold anything: documents, scripts, PDFs / images, entire archives of project history. You organize it however makes sense to you. You control the naming, the hierarchy, the rules.
 
-But the real gap isn't storage or formats. It's three things that neither Projects nor Cowork can give you:
+It's four things that neither Projects nor Cowork can give you:
 
 **Version control.** Every change tracked. Every draft preserved. The ability to undo anything, compare any two points in time, see exactly when a decision was made and what the document looked like before. You can do this through git (more on that later) or with built-in commands like `/rewind` that let you step back through your session history. Nothing is ever lost.
 
