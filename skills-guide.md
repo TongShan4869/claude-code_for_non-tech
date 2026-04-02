@@ -37,6 +37,8 @@ There are three main sources:
 - [Awesome Claude Skills](https://github.com/travisvn/awesome-claude-skills) — the best curated skill list, 22k+ stars
 - [Anthropic Skills Repo](https://github.com/anthropics/skills) — official reference implementations from Anthropic
 
+**Recommended reading** — for a practical walkthrough of how skills work and why they matter, see [this thread by @trq212](https://x.com/trq212/status/2033949937936085378).
+
 ---
 
 ## How to Install a Plugin
