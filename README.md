@@ -62,7 +62,8 @@ Git is a system that tracks every change made to a set of files. Developers use 
 
 ---
 
-> Note: All of these tools (Desktop, Cowork, Claude Code) run on the same model. The difference isn't intelligence; it's the relationship. Desktop is a conversation. Cowork is a task runner. Claude Code is a workspace. It lives inside your project, sees everything, remembers across sessions, and operates within a system you control. The question isn't which is better; it's what you need.
+> [!NOTE]
+> All of these tools (Desktop, Cowork, Claude Code) run on the same model. The difference isn't intelligence; it's the relationship. Desktop is a conversation. Cowork is a task runner. Claude Code is a workspace. It lives inside your project, sees everything, remembers across sessions, and operates within a system you control. The question isn't which is better; it's what you need.
 
 ---
 
