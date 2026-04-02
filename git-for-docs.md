@@ -58,7 +58,7 @@ Your project folder lives on your computer. That is where git works. GitHub is a
 
 Think of GitHub as cloud backup with complete history. If your laptop dies, your project is still there — not just the latest version, but every snapshot you ever took. If you want to collaborate with a colleague, you give them access and they can see the whole history, make changes, and keep everything in sync without emailing files back and forth.
 
-The guide you are reading right now is hosted on GitHub. The repository is the project. The files, the history, the changes over time — all of it lives there, accessible from any machine, never lost.
+The guide you are reading right now is hosted on [GitHub](https://github.com/TongShan4869/claude-code_for_non-tech). The repository is the project. The files, the history, the changes over time — all of it lives there, accessible from any machine, never lost.
 
 You do not need a GitHub account to start. Git works perfectly well on your local machine alone. But when you are ready to back things up or share your work, GitHub is where you go next — and Claude can walk you through connecting the two.
 

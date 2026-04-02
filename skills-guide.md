@@ -82,15 +82,13 @@ This is useful when you want to be deliberate about which approach you're using,
 
 ## Three Examples in Practice
 
-**Brainstorming a structural change.** You say: "I have an idea for restructuring how we format our client reports." With a brainstorming skill active, Claude doesn't just riff — it walks you through a structured process. It surfaces assumptions, identifies what you're actually trying to solve, explores alternative framings, and helps you pressure-test the idea before you commit to it. The output is clearer thinking, not just a list of bullet points.
-
-**Committing code changes.** You type `/commit`. Claude reviews everything that's changed in your working files, groups related changes together, writes a commit message that explains the "why" rather than just the "what," and creates a clean git commit. For someone new to version control, this turns a confusing manual process into a one-word command.
+**Processing conference receipts for reimbursement.** You drop all your receipt photos and PDFs into your conference project folder and say: "Scan the receipts, combine them into one PDF, and make a summary by date and category." Claude already knows the conference details from the folder — you don't need to re-explain the trip. It reads every receipt, organizes them, and produces both a merged file and a clean expense summary ready for reimbursement.
 
 **Turning a vague goal into a plan.** You say: "I want to overhaul how our team handles client onboarding." A writing plans skill takes that and builds it out into a concrete, step-by-step plan with clear phases, ownership suggestions, and defined deliverables. Instead of an open-ended conversation, you get a structured document you can act on immediately.
 
 ---
 
-## Must-Have Skills for Document Workers
+## Must-Have Skills for Knowledge Workers
 
 These are the skills that make the biggest difference if your work revolves around documents, reports, and communication. All are official Anthropic skills — free, maintained, and ready to install.
 
@@ -102,7 +100,11 @@ These are the skills that make the biggest difference if your work revolves arou
 
 **[XLSX](https://github.com/anthropics/skills/tree/main/skills/xlsx)** — Work with spreadsheets in plain English. Formulas, analysis, charts — without needing to remember Excel syntax.
 
-**[Doc Co-Authoring](https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring)** — A structured workflow for writing documents together with Claude. You write, Claude responds, back and forth — real collaborative writing rather than "generate me a draft."
+**[NotebookLM Integration](https://github.com/PleasePrompto/notebooklm-skill)** — A bridge between Claude and Google's NotebookLM. Generate summaries, mind maps, and flashcards from your project materials.
+
+**[Obsidian Skills](https://github.com/kepano/obsidian-skills)** — Built by Obsidian's CEO. Auto-tagging, auto-linking, and vault-native workflows for Obsidian users.
+
+**[Skill Creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator)** — A meta-skill: describe a workflow you want, and Claude generates a ready-to-use skill file in minutes. If none of the above do exactly what you need, this is how you build your own.
 
 ---
 
