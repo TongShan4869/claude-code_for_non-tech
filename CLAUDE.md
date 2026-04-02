@@ -27,6 +27,7 @@ A guide for non-technical knowledge workers to use Claude Code as an AI-assisted
 - **Tone: conversational, confident, not preachy.** "Here's what I discovered" not "you should do this."
 - **Explain Claude Code concepts in practical terms.** What they do for the user, not how they work internally.
 - **Go easy on em dashes.** Use periods, commas, colons, or parentheses instead. Too many em dashes reads like AI-generated text.
+- **Keep both language versions in sync.** Any change to `README.md` (English) must also be applied to `README.zh-CN.md` (Chinese), and vice versa.
 
 ## Repository Structure
 
