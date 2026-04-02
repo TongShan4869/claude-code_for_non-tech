@@ -1,4 +1,4 @@
-# From Chatbot to Co-worker: How Non-Technical Knowledge Workers Can Use Claude Code to Actually Manage Their Projects
+# How Non-Technical Knowledge Workers Can Use Claude Code to Actually Manage Their Projects
 
 ---
 
