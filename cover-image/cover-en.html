@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920, height=1080">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #FFFCF8 0%, #FFF0E0 100%);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .content {
+    text-align: center;
+    max-width: 1800px;
+    padding: 0 40px;
+    z-index: 1;
+  }
+
+  .kicker {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #C75B39;
+    font-weight: 600;
+    margin-bottom: 36px;
+  }
+
+  .headline {
+    font-size: 128px;
+    font-weight: 900;
+    color: #3D2B1F;
+    letter-spacing: -4px;
+    line-height: 1.08;
+    margin-bottom: 0;
+  }
+
+  .divider {
+    width: 120px;
+    height: 6px;
+    background: #E8772E;
+    margin: 44px auto;
+    border-radius: 3px;
+  }
+
+  .tags {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .tag {
+    color: white;
+    padding: 14px 36px;
+    border-radius: 99px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .tag-folder   { background: #E8772E; }
+  .tag-markdown { background: #C75B39; }
+  .tag-git      { background: #F5A623; }
+  .tag-agent    { background: #3D2B1F; }
+
+  .watermark {
+    position: absolute;
+    bottom: 28px;
+    right: 40px;
+    font-size: 16px;
+    color: #C7A882;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    opacity: 0.7;
+  }
+
+  /* Subtle decorative circles */
+  .deco {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.07;
+    z-index: 0;
+  }
+  .deco-1 { width: 400px; height: 400px; background: #E8772E; top: -100px; right: -80px; }
+  .deco-2 { width: 300px; height: 300px; background: #F5A623; bottom: -80px; left: -60px; }
+  .deco-3 { width: 200px; height: 200px; background: #C75B39; top: 50%; left: 8%; }
+</style>
+</head>
+<body>
+  <div class="deco deco-1"></div>
+  <div class="deco deco-2"></div>
+  <div class="deco deco-3"></div>
+
+  <div class="content">
+    <div class="kicker">A Guide for Knowledge Workers</div>
+    <div class="headline">Claude Code Is Not<br>Just for Developers</div>
+    <div class="divider"></div>
+    <div class="tags">
+      <span class="tag tag-folder">Folder</span>
+      <span class="tag tag-markdown">Markdown</span>
+      <span class="tag tag-git">Git</span>
+      <span class="tag tag-agent">Agent</span>
+    </div>
+  </div>
+
+  <div class="watermark">Tong Shan / Cu</div>
+</body>
+</html>

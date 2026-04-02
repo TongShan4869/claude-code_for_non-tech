@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/cover.png" alt="Cover: Claude Code Is Not Just for Developers" width="800">
+</p>
+
 <h1 align="center">How Non-Technical Knowledge Workers Can Use Claude Code to Actually Manage Their Projects</h1>
 
 <p align="center">

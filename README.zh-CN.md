@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/cover-zh.png" alt="封面：Claude Code 不只是写代码的工具" width="800">
+</p>
+
 <h1 align="center">非技术知识工作者如何用 Claude Code 真正管理自己的项目</h1>
 
 <p align="center">
