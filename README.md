@@ -10,7 +10,7 @@
   <a href="https://www.linkedin.com/in/tongshan-cu/"><img src="https://img.shields.io/badge/LinkedIn-Tong%20Shan-0A66C2?logo=linkedin" alt="LinkedIn"></a>
 </p>
 
-> *My friend watched me brainstorm ideas, do deep research, read documents and papers, write scripts, summarize a document, and export my progress as a PPTX for a group meeting presentation. All done in Claude Code. She was amazed and asked how I did all of this, like I live in Claude Code. I admit I've become very AI-native for everything now. But it has genuinely sped up my efficiency by at least 10x. So I figured it made sense to write this for those who are reluctant to use Claude Code beyond coding.*
+> *My friend watched me brainstorm ideas, do deep research, read documents and papers, write scripts, summarize a document, and export my progress as a PPTX for a group meeting presentation. All done in Claude Code. She was amazed and asked how I did all of this, like I use Claude Code as my OS now. I admit I've become very AI-native for everything now. But it has genuinely sped up my efficiency by at least 10x. So I figured it made sense to write this for those who are reluctant to use Claude Code beyond coding.*
 
 ---
 
@@ -120,6 +120,10 @@ The only slightly technical step. Claude Code runs in your terminal, the text-ba
 The official setup instructions are here: https://docs.anthropic.com/en/docs/claude-code/overview
 
 That page walks you through everything. Don't try to skip steps. Once installation is done, the rest of this guide is straightforward.
+
+If you prefer to see and edit your files visually rather than working entirely in the terminal, consider using an IDE like VS Code. It lets you edit documents with a live markdown preview, manage your project folder, and run Claude Code in the built-in terminal, all in one window.
+
+![IDE setup: source editor on the left, markdown preview on the right, Claude Code in the terminal below](ide-setup.png)
 
 ---
 
@@ -278,6 +282,6 @@ The pattern is simple: folder, markdown, git, agent. That's all four ingredients
 
 What makes it yours is the content. Your projects, your files, your preferences, your `CLAUDE.md`. The same setup that built this guide works equally well for a client folder, a research project, a set of meeting notes, a running archive of decisions and drafts. Apply it to whatever you're actually managing.
 
-The goal isn't to use Claude Code. The goal is to work with less friction. Stop re-explaining context, stop losing document history, stop being the bridge between your work and your tools. Once you internalize the pattern, you'll start seeing where it fits.
+The goal is to work with less friction. Stop re-explaining context, stop losing document history, stop being the bridge between your work and your tools. Once you internalize the pattern, you'll start seeing where it fits.
 
 Start with one folder. Write one `CLAUDE.md`. See what happens.
