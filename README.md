@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="cover.png" alt="Cover: How Non-Technical Knowledge Workers Can Use Claude Code to Actually Manage Their Projects" width="800">
+  <img src="assets/cover.png" alt="Cover: How Non-Technical Knowledge Workers Can Use Claude Code to Actually Manage Their Projects" width="800">
 </p>
 
 <h1 align="center">How Non-Technical Knowledge Workers Can Use Claude Code to Actually Manage Their Projects</h1>
@@ -127,7 +127,7 @@ That page walks you through everything. Don't try to skip steps. Once installati
 
 If you prefer to see and edit your files visually rather than working entirely in the terminal, consider using an IDE like VS Code. It lets you edit documents with a live markdown preview, manage your project folder, and run Claude Code in the built-in terminal, all in one window.
 
-![IDE setup: source editor on the left, markdown preview on the right, Claude Code in the terminal below](ide-setup.png)
+![IDE setup: source editor on the left, markdown preview on the right, Claude Code in the terminal below](assets/ide-setup.png)
 
 ---
 
@@ -151,7 +151,7 @@ claude
 
 That's it. Claude Code opens inside your folder. It can now see everything in it.
 
-![Demo: opening Claude Code in a project folder and starting a conversation](demo.gif)
+![Demo: opening Claude Code in a project folder and starting a conversation](assets/demo.gif)
 
 This is the shift. You're not visiting a chatbot and pasting in context. Claude is already sitting in your project. When you ask it something, it can look at the actual files. You stop being the bridge between your work and the AI — the AI has direct access.
 

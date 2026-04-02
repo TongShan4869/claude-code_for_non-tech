@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="cover-zh.png" alt="封面：非技术知识工作者如何使用 Claude Code 实际管理项目" width="800">
+  <img src="assets/cover-zh.png" alt="封面：非技术知识工作者如何使用 Claude Code 实际管理项目" width="800">
 </p>
 
 <h1 align="center">非技术知识工作者如何用 Claude Code 真正管理自己的项目</h1>
@@ -127,7 +127,7 @@ Claude Code 跨对话保留信息：你的偏好、项目上下文、过去的�
 
 如果你更习惯直观地查看和编辑文件，而不是完全在终端里操作，可以考虑使用 VS Code 这样的 IDE。它可以让你在同一个窗口里编辑文档、实时预览 Markdown 效果，管理项目文件夹，还能在内置终端里运行 Claude Code。
 
-![IDE 界面：左侧为源码编辑器，右侧为 Markdown 预览，下方终端运行 Claude Code](ide-setup.png)
+![IDE 界面：左侧为源码编辑器，右侧为 Markdown 预览，下方终端运行 Claude Code](assets/ide-setup.png)
 
 ---
 
@@ -151,7 +151,7 @@ claude
 
 就这样。Claude Code 在你的文件夹里打开了。它现在能看到里面的一切。
 
-![演示：在项目文件夹中打开 Claude Code 并开始对话](demo.gif)
+![演示：在项目文件夹中打开 Claude Code 并开始对话](assets/demo.gif)
 
 这就是那个转变。你不再是去拜访一个聊天机器人然后把上下文粘贴进去。Claude 已经坐在你的项目里了。当你问它什么，它能直接看到实际的文件。你不用再当你的工作和 AI 之间的传话人了，AI 直接有了访问权限。
 
