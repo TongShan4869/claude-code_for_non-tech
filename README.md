@@ -241,6 +241,8 @@ flowchart TD
 
 Every decision is in the git history. Every draft, every revision, every moment I changed course. I can see exactly when I restructured Section 3 and what it looked like before. That would have been impossible to track in a chatbot.
 
+If you want to see what Claude actually produced during the brainstorming and planning phases, the [design spec](docs/superpowers/specs/2026-04-01-claude-code-for-non-tech-design.md) and [implementation plan](docs/superpowers/plans/2026-04-01-claude-code-for-non-tech.md) are both in the `docs/` folder of this repo.
+
 So when I describe the pattern — folder, markdown, git, agent — I'm describing what I did to build what you're reading now. The pattern works. I can confirm it from the inside.
 
 ---
