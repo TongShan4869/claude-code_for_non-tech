@@ -132,6 +132,8 @@ claude
 
 That's it. Claude Code opens inside your folder. It can now see everything in it.
 
+![Demo: opening Claude Code in a project folder and starting a conversation](demo.gif)
+
 This is the shift. You're not visiting a chatbot and pasting in context. Claude is already sitting in your project. When you ask it something, it can look at the actual files. You stop being the bridge between your work and the AI — the AI has direct access.
 
 ---
