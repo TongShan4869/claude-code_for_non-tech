@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=600">
+  <style>
+    @font-face {
+      font-family: 'TsangerJinKai';
+      src: url('file:///Users/joe/.claude/skills/qiaomu-info-card-designer/assets/TsangerJinKai02-W04.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: block;
+    }
+
+    :root {
+      --color-bg: #f5f3ed;
+      --color-text: #1a1a1a;
+      --color-accent: #2c3e8c;
+      --color-muted: #555;
+      --font-title: 'TsangerJinKai', serif;
+      --font-body: 'TsangerJinKai', serif;
+      --font-label: 'TsangerJinKai', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      margin: 0;
+      background: var(--color-bg);
+    }
+
+    .card {
+      width: 600px;
+      height: 800px;
+      background: var(--color-bg);
+      padding: 30px 32px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .card > * { position: relative; z-index: 1; }
+
+    .main-title {
+      font-family: var(--font-title);
+      font-size: 34px;
+      font-weight: normal;
+      line-height: 1.2;
+      color: #0a0a0a;
+      letter-spacing: 0.02em;
+    }
+
+    .accent-bar-full {
+      height: 3px;
+      background: var(--color-accent);
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    .points {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      flex: 1;
+    }
+
+    .point {
+      padding: 10px 14px;
+    }
+
+    .point:nth-child(odd) {
+      background: rgba(0,0,0,0.035);
+    }
+
+    .point:nth-child(even) {
+      background: transparent;
+    }
+
+    .point h3 {
+      font-family: var(--font-title);
+      font-size: 18px;
+      font-weight: normal;
+      margin-bottom: 3px;
+      color: #0a0a0a;
+      line-height: 1.3;
+    }
+
+    .point p {
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--color-text);
+    }
+
+    .point .dim {
+      font-family: var(--font-label);
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      opacity: 0.85;
+      margin-bottom: 3px;
+    }
+
+    .pull-quote {
+      background: rgba(0,0,0,0.03);
+      padding: 14px 16px 12px;
+      border-left: 3px solid var(--color-accent);
+      position: relative;
+    }
+
+    .pull-quote::before {
+      content: '\201C';
+      font-family: Georgia, serif;
+      font-size: 40px;
+      color: var(--color-accent);
+      opacity: 0.15;
+      position: absolute;
+      top: -2px;
+      left: 8px;
+      line-height: 1;
+    }
+
+    .pull-quote p {
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--color-text);
+      font-style: italic;
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer {
+      font-family: var(--font-label);
+      font-size: 13px;
+      color: #888;
+      letter-spacing: 0.05em;
+      border-top: 1px solid rgba(0,0,0,0.1);
+      padding-top: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+<div class="card">
+
+  <!-- 主标题 -->
+  <div>
+    <h1 class="main-title">非技术知识工作者如何把 Claude Code 变成你的项目操作系统</h1>
+  </div>
+
+  <!-- 分割线 -->
+  <div class="accent-bar-full"></div>
+
+  <!-- 要点列表 -->
+  <div class="points">
+
+    <div class="point">
+      <div class="dim">正名</div>
+      <h3>「Code」这个名字骗了所有人</h3>
+      <p>管文档、组织项目、追踪变更、头脑风暴、写报告、搭工作流，只不过运行在终端里。</p>
+    </div>
+
+    <div class="point">
+      <div class="dim">完整系统</div>
+      <h3>四样东西，聊天机器人给不了你</h3>
+      <p>版本控制、深度定制（Skills/插件/Hooks）、可扩展性、所有权——一切都在你自己电脑上。</p>
+    </div>
+
+    <div class="point">
+      <div class="dim">上下文</div>
+      <h3>文件夹就是上下文，不用再复制粘贴</h3>
+      <p>Claude 直接看到项目文件夹里的所有文件，你不用再当工作和 AI 之间的传话人。</p>
+    </div>
+
+    <div class="point">
+      <div class="dim">指令</div>
+      <h3>CLAUDE.md：写一次规则，每次会话自动生效</h3>
+      <p>项目专属指令：语气、结构、约束。Claude 每次开会话都读取，不用重复交代。</p>
+    </div>
+
+    <div class="point">
+      <div class="dim">格式</div>
+      <h3>Markdown：你和 AI 共同的语言</h3>
+      <p>纯文本、可移植、永久保存。不被私有格式锁定，AI 的一切配置都用它写成。</p>
+    </div>
+
+    <div class="point">
+      <div class="dim">安全网</div>
+      <h3>Git：每个决策都有迹可循</h3>
+      <p>每处改动有记录，任何操作可撤销。搭配 GitHub 云端备份，什么都不会丢。</p>
+    </div>
+
+  </div>
+
+  <!-- 金句引用 -->
+  <div class="pull-quote">
+    <p>你不用再当你的工作和 AI 之间的传话人了——AI 直接有了访问权限。</p>
+  </div>
+
+  <!-- 页脚 -->
+  <div class="footer">
+    <span>Tong Shan · GitHub</span>
+    <span>2026</span>
+  </div>
+
+</div>
+</body>
+</html>

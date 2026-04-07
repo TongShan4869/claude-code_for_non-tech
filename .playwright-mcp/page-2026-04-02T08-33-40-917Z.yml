@@ -1,0 +1,69 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]: "Claude Code: The Non-Coder's 10x Productivity OS"
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: 📁
+        - generic [ref=e9]: Your Project Folder Is the Brain
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - generic [ref=e13]: proposal.md
+          - generic [ref=e15]: notes/
+          - generic [ref=e17]: brief.pdf
+          - generic [ref=e19]: CLAUDE.md
+        - generic [ref=e21]: ➔
+        - generic [ref=e22]: AI
+      - generic [ref=e23]:
+        - strong [ref=e24]: Claude sees every file
+        - text: and subfolder automatically, eliminating the need for constant copy-pasting.
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]: 📝
+        - generic [ref=e28]: "CLAUDE.md: Your Project Rulebook"
+      - generic [ref=e30]:
+        - generic [ref=e32]: CLAUDE.md
+        - generic [ref=e37]: ➔
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - generic [ref=e40]: ✓
+            - text: Tone & style
+          - generic [ref=e41]:
+            - generic [ref=e42]: ✓
+            - text: Project rules
+          - generic [ref=e43]:
+            - generic [ref=e44]: ✓
+            - text: Standing instructions
+      - generic [ref=e45]:
+        - text: Control your AI with a
+        - strong [ref=e46]: simple text file
+        - text: that defines your style, goals, and standing instructions.
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - generic [ref=e49]: ☍
+        - generic [ref=e50]: Bulletproof History with Git
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - generic [ref=e56]: Draft 1
+          - generic [ref=e60]: Draft 2
+          - generic [ref=e64]: Draft 3
+          - generic [ref=e68]: Current
+        - generic [ref=e69]: ↺ Undo anytime
+      - generic [ref=e70]:
+        - text: Every change is tracked, letting you
+        - strong [ref=e71]: undo edits, compare versions
+        - text: ", and never lose a draft."
+    - generic [ref=e72]:
+      - generic [ref=e73]:
+        - generic [ref=e74]: 🔗
+        - generic [ref=e75]: Connect to Your Entire Workspace
+      - generic [ref=e77]:
+        - generic [ref=e78]: AI
+        - generic [ref=e83]:
+          - generic [ref=e84]: ✉️ Email
+          - generic [ref=e85]: 💬 Slack
+          - generic [ref=e86]: 📅 Calendar
+      - generic [ref=e87]:
+        - text: Use MCP servers to link Claude directly to your
+        - strong [ref=e88]: Email, Slack, and Google Calendar
+        - text: .
+  - generic [ref=e89]: Tong Shan / Cu

@@ -62,6 +62,8 @@ Chatbot apps have basic memory. They can recall things across conversations, and
 
 Markdown is a simple way of writing that tells any program how to format your text (headings, bold, lists) using plain characters you can type anywhere. It's readable as-is, renders beautifully in almost every tool, and doesn't lock you into any single application. Your documents aren't trapped in a proprietary format that only one company's software can open. They're just text files. Permanent, portable, and understood by both humans and AI equally well.
 
+Because markdown is just text, you can view and edit it with any tool. Note-taking apps like [Obsidian](https://obsidian.md/) render your markdown beautifully with backlinks, graph views, and live preview, making them a great visual companion alongside Claude Code.
+
 In Claude Code, everything that shapes how the AI works (your project instructions, its memory, its skills, its rules) is written in markdown. It's become the standard format for building and configuring AI agents. Learning markdown isn't just about formatting documents anymore. Markdown is the language you and your AI both speak.
 
 New to Markdown? These resources will get you up to speed quickly:
@@ -135,7 +137,7 @@ That page walks you through everything. Don't try to skip steps. Once installati
 
 **Not comfortable with the terminal?** Claude Code also comes as a [desktop app](https://claude.ai/download) (Mac and Windows) and a [web app](https://claude.ai/code) you can use right in your browser. Both give you the same capabilities without needing to open a terminal yourself. The desktop app is the easiest starting point if the command line feels unfamiliar.
 
-If you prefer to see and edit your files visually rather than working entirely in the terminal, consider using an IDE like VS Code. It lets you edit documents with a live markdown preview, manage your project folder, and run Claude Code in the built-in terminal, all in one window.
+If you prefer to see and edit your files visually rather than working entirely in the terminal, consider using an IDE like VS Code or [Cursor](https://www.cursor.com/). They let you edit documents with a live markdown preview, manage your project folder, and run Claude Code in the built-in terminal, all in one window. For a lighter-weight option, [Obsidian](https://obsidian.md/) works well as what Andrej Karpathy calls a ["frontend" IDE](https://x.com/karpathy/status/2039805659525644595): the LLM writes and maintains your files while you browse the results visually in Obsidian, following links and watching the knowledge graph update in real time.
 
 ![IDE setup: source editor on the left, markdown preview on the right, Claude Code in the terminal below](assets/ide-setup.png)
 

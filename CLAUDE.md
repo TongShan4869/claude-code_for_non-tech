@@ -34,7 +34,8 @@ A guide for non-technical knowledge workers to use Claude Code as an AI-assisted
 - `README.md` — Main article (works as GitHub landing page and standalone blog post)
 - `skills-guide.md` — Supplementary deep-dive on Skills, including must-have skills for knowledge workers and discovery resources
 - `git-for-docs.md` — Supplementary deep-dive on git for document management
-- `assets/` — All images: cover images (EN/ZH), demo.gif, ide-setup.png
+- `assets/` — All images: cover images (EN/ZH), infographics (EN/ZH), demo.gif, ide-setup.png
+- `cover-image/` — HTML source files for cover images and infographics (rendered to PNG in `assets/`)
 - `docs/superpowers/specs/` — Design spec (linked from README section 6)
 - `docs/superpowers/plans/` — Implementation plan (linked from README section 6)
 - No build system, no tests, no dependencies — this is a documentation project

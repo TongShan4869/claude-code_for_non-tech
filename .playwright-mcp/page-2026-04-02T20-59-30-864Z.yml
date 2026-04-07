@@ -1,0 +1,79 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]: Claude Code：非技术人员的 10 倍效率操作系统
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img [ref=e9]
+        - generic [ref=e11]: 项目文件夹即上下文
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - generic [ref=e15]: proposal.md
+          - generic [ref=e17]: notes/
+          - generic [ref=e19]: brief.pdf
+          - generic [ref=e21]: CLAUDE.md
+        - generic [ref=e23]: ➔
+        - generic [ref=e24]: AI
+      - generic [ref=e25]:
+        - strong [ref=e26]: Claude 自动读取每个文件
+        - text: 和子文件夹，无需反复复制粘贴。
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - img [ref=e30]
+        - generic [ref=e32]: CLAUDE.md：你的项目规则手册
+      - generic [ref=e34]:
+        - generic [ref=e36]: CLAUDE.md
+        - generic [ref=e41]: ➔
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - generic [ref=e44]: ✓
+            - text: 语气与风格
+          - generic [ref=e45]:
+            - generic [ref=e46]: ✓
+            - text: 项目规则
+          - generic [ref=e47]:
+            - generic [ref=e48]: ✓
+            - text: 常驻指令
+      - generic [ref=e49]:
+        - text: 用一个
+        - strong [ref=e50]: 简单的文本文件
+        - text: 控制你的 AI：定义风格、目标和常驻指令。
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - img [ref=e54]
+        - generic [ref=e56]: Git 让历史万无一失
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e62]: 初稿
+          - generic [ref=e66]: 二稿
+          - generic [ref=e70]: 三稿
+          - generic [ref=e74]: 当前
+        - generic [ref=e75]: ↺ 随时撤销
+      - generic [ref=e76]:
+        - text: 每次修改都被记录，你可以
+        - strong [ref=e77]: 撤销编辑、对比版本
+        - text: ，再也不会丢失草稿。
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - img [ref=e81]
+        - generic [ref=e83]: Markdown：你和 AI 的共同语言
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - generic [ref=e87]: 你写的
+          - text: "# 会议记录"
+          - text: "**待办：**发送草稿"
+          - text: "- 审核预算"
+          - text: "- 更新时间线"
+        - generic [ref=e88]: ➔
+        - generic [ref=e89]:
+          - generic [ref=e90]: AI 读取并渲染
+          - heading "会议记录" [level=4] [ref=e91]
+          - generic [ref=e92]:
+            - strong [ref=e93]: 待办：
+            - text: 发送草稿
+          - list [ref=e94]:
+            - listitem [ref=e95]: 审核预算
+            - listitem [ref=e96]: 更新时间线
+      - generic [ref=e97]:
+        - strong [ref=e98]: 你和 AI 都能理解的纯文本。
+        - text: 可移植、可读、不被任何应用锁定。
+  - generic [ref=e99]: Tong Shan / Cu
