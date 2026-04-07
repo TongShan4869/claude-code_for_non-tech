@@ -137,7 +137,7 @@ Claude Code 跨对话保留信息：你的偏好、项目上下文、过去的�
 
 **对终端不太适应？** Claude Code 还有[桌面应用](https://claude.ai/download)（Mac 和 Windows）和[网页版](https://claude.ai/code)，直接在浏览器里就能用。两者提供的能力完全一样，不需要你自己打开终端。如果命令行让你觉得陌生，桌面应用是最简单的起点。
 
-如果你更习惯直观地查看和编辑文件，而不是完全在终端里操作，可以考虑使用 VS Code 或 [Cursor](https://www.cursor.com/) 这样的 IDE。它们可以让你在同一个窗口里编辑文档、实时预览 Markdown 效果，管理项目文件夹，还能在内置终端里运行 Claude Code。如果想要更轻量的方案，[Obsidian](https://obsidian.md/) 也非常合适。Andrej Karpathy 称之为["前端" IDE](https://x.com/karpathy/status/2039805659525644595)：LLM 负责编写和维护你的文件，而你在 Obsidian 里可视化地浏览成果，跟随链接、实时查看知识图谱的更新。
+如果你更习惯直观地查看和编辑文件，而不是完全在终端里操作，可以考虑使用 VS Code 或 Cursor 这样的 IDE。它们可以让你在同一个窗口里编辑文档、实时预览 Markdown 效果，管理项目文件夹，还能在内置终端里运行 Claude Code。如果想要更轻量的方案，[Obsidian](https://obsidian.md/) 也非常合适。Andrej Karpathy 称之为["前端" IDE](https://x.com/karpathy/status/2039805659525644595)：LLM 负责编写和维护你的文件，而你在 Obsidian 里可视化地浏览成果，跟随链接、实时查看知识图谱的更新。
 
 ![IDE 界面：左侧为源码编辑器，右侧为 Markdown 预览，下方终端运行 Claude Code](assets/ide-setup.png)
 
