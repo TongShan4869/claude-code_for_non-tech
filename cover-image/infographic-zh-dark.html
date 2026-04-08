@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920, height=1080">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1920px;
+    height: 1080px;
+    background: linear-gradient(180deg, #1A1208 0%, #2A1810 100%);
+    font-family: 'Noto Sans SC', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: hidden;
+    position: relative;
+    padding: 48px 64px 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .deco { position: absolute; border-radius: 50%; opacity: 0.10; z-index: 0; }
+  .deco-1 { width: 350px; height: 350px; background: #E8772E; top: -80px; right: -60px; }
+  .deco-2 { width: 250px; height: 250px; background: #F5A623; bottom: -60px; left: -40px; }
+
+  .title {
+    text-align: center;
+    font-size: 62px;
+    font-weight: 900;
+    color: #FFF0E0;
+    letter-spacing: -1px;
+    line-height: 1.15;
+    margin-bottom: 40px;
+    z-index: 1;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 28px;
+    flex: 1;
+    z-index: 1;
+  }
+
+  .card {
+    background: #241810;
+    border-radius: 20px;
+    padding: 36px 40px;
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid;
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .card-1 { border-top-color: #E8772E; }
+  .card-2 { border-top-color: #C75B39; }
+  .card-3 { border-top-color: #F5A623; }
+  .card-4 { border-top-color: #F5E6D3; }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .card-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+  }
+
+  .card-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+  }
+
+  .card-1 .card-icon { background: #E8772E; }
+  .card-2 .card-icon { background: #C75B39; }
+  .card-3 .card-icon { background: #F5A623; }
+  .card-4 .card-icon { background: #F5E6D3; }
+  .card-4 .card-icon svg { fill: #1A1208; }
+
+  .card-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #FFF0E0;
+  }
+
+  .card-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+    padding: 8px 0;
+  }
+
+  .card-desc {
+    font-size: 20px;
+    color: #C7A882;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+
+  .card-desc strong {
+    color: #FFF0E0;
+    font-weight: 700;
+  }
+
+  .folder-viz { display: flex; align-items: center; gap: 16px; }
+
+  .folder-box {
+    background: #2E1F14;
+    border: 2px solid #E8772E;
+    border-radius: 12px;
+    padding: 14px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .folder-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    color: #C7A882;
+    font-weight: 500;
+    font-family: 'Inter', monospace;
+  }
+
+  .folder-item .dot { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
+
+  .arrow-icon { font-size: 32px; color: #E8772E; }
+
+  .ai-badge {
+    background: #E8772E;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 16px 24px;
+    border-radius: 14px;
+    letter-spacing: 1px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .md-viz { display: flex; align-items: center; gap: 24px; }
+
+  .md-file {
+    background: #2E1F14;
+    border: 2px solid #C75B39;
+    border-radius: 12px;
+    padding: 14px 20px;
+    min-width: 200px;
+  }
+
+  .md-file-header {
+    font-size: 14px;
+    font-weight: 700;
+    color: #E8772E;
+    margin-bottom: 8px;
+    font-family: monospace;
+  }
+
+  .md-line { height: 6px; border-radius: 3px; margin-bottom: 6px; background: #4A3424; }
+
+  .check-list { display: flex; flex-direction: column; gap: 8px; }
+
+  .check-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #C7A882;
+  }
+
+  .check-mark {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    background: #C75B39;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .git-viz { display: flex; align-items: center; gap: 24px; }
+  .git-timeline { display: flex; align-items: center; gap: 0; }
+  .git-node { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .git-dot { width: 20px; height: 20px; border-radius: 50%; background: #F5A623; border: 3px solid #E8772E; }
+  .git-dot.active { background: #E8772E; width: 24px; height: 24px; }
+  .git-label { font-size: 13px; font-weight: 600; color: #C7A882; white-space: nowrap; }
+  .git-line { width: 40px; height: 3px; background: #4A3424; margin-bottom: 22px; }
+
+  .undo-badge {
+    background: #2E1F14;
+    border: 2px solid #F5A623;
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #F5A623;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .md-compare { display: flex; align-items: stretch; gap: 20px; width: 100%; }
+
+  .md-pane { flex: 1; border-radius: 12px; padding: 16px 20px; font-size: 14px; line-height: 1.6; }
+
+  .md-pane-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 10px; }
+
+  .md-source { background: #0F0905; color: #E8C9B0; font-family: 'Courier New', monospace; border: 2px solid #4A3424; }
+  .md-source .md-pane-label { color: #8B6B50; }
+  .md-source .md-hash { color: #E8772E; }
+  .md-source .md-bold { color: #F5A623; }
+  .md-source .md-dash { color: #C75B39; }
+
+  .md-rendered { background: #2E1F14; border: 2px solid #F5E6D3; color: #FFF0E0; }
+  .md-rendered .md-pane-label { color: #C7A882; }
+  .md-rendered h4 { font-size: 17px; margin-bottom: 6px; font-weight: 800; }
+  .md-rendered ul { padding-left: 20px; margin: 4px 0; }
+  .md-rendered li { margin-bottom: 2px; font-size: 14px; }
+
+  .md-arrow-col { display: flex; align-items: center; font-size: 28px; color: #F5E6D3; }
+
+  .watermark {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    font-size: 15px;
+    color: #8B6B50;
+    font-weight: 500;
+    opacity: 0.85;
+  }
+</style>
+</head>
+<body>
+  <div class="deco deco-1"></div>
+  <div class="deco deco-2"></div>
+
+  <div class="title">Claude Code：非技术人员的 10 倍效率操作系统</div>
+
+  <div class="grid">
+    <!-- Card 1: 项目文件夹 -->
+    <div class="card card-1">
+      <div class="card-header">
+        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg></div>
+        <div class="card-title">项目文件夹即上下文</div>
+      </div>
+      <div class="card-visual">
+        <div class="folder-viz">
+          <div class="folder-box">
+            <div class="folder-item"><div class="dot" style="background:#E8772E;"></div>proposal.md</div>
+            <div class="folder-item"><div class="dot" style="background:#C75B39;"></div>notes/</div>
+            <div class="folder-item"><div class="dot" style="background:#F5A623;"></div>brief.pdf</div>
+            <div class="folder-item"><div class="dot" style="background:#F5E6D3;"></div>CLAUDE.md</div>
+          </div>
+          <div class="arrow-icon">&#10132;</div>
+          <div class="ai-badge">AI</div>
+        </div>
+      </div>
+      <div class="card-desc"><strong>Claude 自动读取每个文件</strong>和子文件夹，无需反复复制粘贴。</div>
+    </div>
+
+    <!-- Card 2: CLAUDE.md -->
+    <div class="card card-2">
+      <div class="card-header">
+        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h5v7h7v9H6zm2-5h8v2H8v-2zm0-3h8v2H8v-2z"/></svg></div>
+        <div class="card-title">CLAUDE.md：你的项目规则手册</div>
+      </div>
+      <div class="card-visual">
+        <div class="md-viz">
+          <div class="md-file">
+            <div class="md-file-header">CLAUDE.md</div>
+            <div class="md-line" style="width:90%;"></div>
+            <div class="md-line" style="width:70%;"></div>
+            <div class="md-line" style="width:80%;"></div>
+            <div class="md-line" style="width:60%;"></div>
+          </div>
+          <div class="arrow-icon">&#10132;</div>
+          <div class="check-list">
+            <div class="check-item"><div class="check-mark">&#10003;</div>语气与风格</div>
+            <div class="check-item"><div class="check-mark">&#10003;</div>项目规则</div>
+            <div class="check-item"><div class="check-mark">&#10003;</div>常驻指令</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-desc">用一个<strong>简单的文本文件</strong>控制你的 AI：定义风格、目标和常驻指令。</div>
+    </div>
+
+    <!-- Card 3: Git -->
+    <div class="card card-3">
+      <div class="card-header">
+        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.25 2.52.77-1.28-3.52-2.09V8z"/></svg></div>
+        <div class="card-title">Git 让历史万无一失</div>
+      </div>
+      <div class="card-visual">
+        <div class="git-viz">
+          <div class="git-timeline">
+            <div class="git-node">
+              <div class="git-dot"></div>
+              <div class="git-label">初稿</div>
+            </div>
+            <div class="git-line"></div>
+            <div class="git-node">
+              <div class="git-dot"></div>
+              <div class="git-label">二稿</div>
+            </div>
+            <div class="git-line"></div>
+            <div class="git-node">
+              <div class="git-dot"></div>
+              <div class="git-label">三稿</div>
+            </div>
+            <div class="git-line"></div>
+            <div class="git-node">
+              <div class="git-dot active"></div>
+              <div class="git-label">当前</div>
+            </div>
+          </div>
+          <div class="undo-badge">&#8634; 随时撤销</div>
+        </div>
+      </div>
+      <div class="card-desc">每次修改都被记录，你可以<strong>撤销编辑、对比版本</strong>，再也不会丢失草稿。</div>
+    </div>
+
+    <!-- Card 4: Markdown -->
+    <div class="card card-4">
+      <div class="card-header">
+        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M20.56 18H3.44C2.65 18 2 17.37 2 16.59V7.41C2 6.63 2.65 6 3.44 6h17.12c.79 0 1.44.63 1.44 1.41v9.18c0 .78-.65 1.41-1.44 1.41zM6 15.5v-3.5l1.5 2 1.5-2v3.5h2v-7h-2l-1.5 2-1.5-2h-2v7h2zm10-1.5l-2.5-3h2v-2.5h2V11h2l-3.5 3z"/></svg></div>
+        <div class="card-title">Markdown：你和 AI 的共同语言</div>
+      </div>
+      <div class="card-visual">
+        <div class="md-compare">
+          <div class="md-pane md-source">
+            <div class="md-pane-label">你写的</div>
+            <span class="md-hash"># </span>会议记录<br>
+            <span class="md-bold">**待办：**</span>发送草稿<br>
+            <span class="md-dash">- </span>审核预算<br>
+            <span class="md-dash">- </span>更新时间线
+          </div>
+          <div class="md-arrow-col">&#10132;</div>
+          <div class="md-pane md-rendered">
+            <div class="md-pane-label">AI 读取并渲染</div>
+            <h4>会议记录</h4>
+            <div><strong>待办：</strong>发送草稿</div>
+            <ul><li>审核预算</li><li>更新时间线</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="card-desc"><strong>你和 AI 都能理解的纯文本。</strong>可移植、可读、不被任何应用锁定。</div>
+    </div>
+  </div>
+
+  <div class="watermark">Tong Shan / Cu</div>
+</body>
+</html>

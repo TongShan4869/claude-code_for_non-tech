@@ -1,0 +1,12 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]: A Guide for Knowledge Workers
+    - generic [ref=e7]:
+      - text: Claude Code Is Not
+      - text: Just for Developers
+    - generic [ref=e9]:
+      - generic [ref=e10]: Folder
+      - generic [ref=e11]: Markdown
+      - generic [ref=e12]: Git
+      - generic [ref=e13]: Agent
+  - generic [ref=e14]: Tong Shan / Cu

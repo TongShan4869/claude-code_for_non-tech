@@ -1,0 +1,79 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]: "Claude Code: The Non-Coder's 10x Productivity OS"
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img [ref=e9]
+        - generic [ref=e11]: Your Project Folder Is the Context
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - generic [ref=e15]: proposal.md
+          - generic [ref=e17]: notes/
+          - generic [ref=e19]: brief.pdf
+          - generic [ref=e21]: CLAUDE.md
+        - generic [ref=e23]: ➔
+        - generic [ref=e24]: AI
+      - generic [ref=e25]:
+        - strong [ref=e26]: Claude sees every file
+        - text: and subfolder automatically, eliminating the need for constant copy-pasting.
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - img [ref=e30]
+        - generic [ref=e32]: "CLAUDE.md: Your Project Rulebook"
+      - generic [ref=e34]:
+        - generic [ref=e36]: CLAUDE.md
+        - generic [ref=e41]: ➔
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - generic [ref=e44]: ✓
+            - text: Tone & style
+          - generic [ref=e45]:
+            - generic [ref=e46]: ✓
+            - text: Project rules
+          - generic [ref=e47]:
+            - generic [ref=e48]: ✓
+            - text: Standing instructions
+      - generic [ref=e49]:
+        - text: Control your AI with a
+        - strong [ref=e50]: simple text file
+        - text: that defines your style, goals, and standing instructions.
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - img [ref=e54]
+        - generic [ref=e56]: Bulletproof History with Git
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e62]: Draft 1
+          - generic [ref=e66]: Draft 2
+          - generic [ref=e70]: Draft 3
+          - generic [ref=e74]: Current
+        - generic [ref=e75]: ↺ Undo anytime
+      - generic [ref=e76]:
+        - text: Every change is tracked, letting you
+        - strong [ref=e77]: undo edits, compare versions
+        - text: ", and never lose a draft."
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - img [ref=e81]
+        - generic [ref=e83]: "Markdown: The Shared Language"
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - generic [ref=e87]: You write
+          - text: "# Meeting Notes"
+          - text: "**Action:** Send draft"
+          - text: "- Review budget"
+          - text: "- Update timeline"
+        - generic [ref=e88]: ➔
+        - generic [ref=e89]:
+          - generic [ref=e90]: AI reads & renders
+          - heading "Meeting Notes" [level=4] [ref=e91]
+          - generic [ref=e92]:
+            - strong [ref=e93]: "Action:"
+            - text: Send draft
+          - list [ref=e94]:
+            - listitem [ref=e95]: Review budget
+            - listitem [ref=e96]: Update timeline
+      - generic [ref=e97]:
+        - strong [ref=e98]: Plain text that both you and AI understand.
+        - text: Portable, readable, and not locked into any app.
+  - generic [ref=e99]: Tong Shan / Cu
